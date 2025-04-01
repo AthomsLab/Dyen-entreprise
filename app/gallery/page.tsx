@@ -453,7 +453,7 @@ export default function Gallery() {
         <section className="py-16">
           <div className="container mx-auto px-4">
             {/* Category Filter */}
-            <div className="mb-12 flex flex-wrap justify-center gap-2">
+            <div className="mb-12 flex flex-wrap justify-center gap-2" role="group" aria-label="Filtres de la galerie">
               {categories.map((category) => (
                 <button
                   key={category.id}
@@ -465,6 +465,7 @@ export default function Gallery() {
                   }`}
                   style={{ borderRadius: "9999px", WebkitBorderRadius: "9999px" }}
                   aria-label={`Filtrer par ${category.name}`}
+                  aria-pressed={selectedCategory === category.id}
                 >
                   {category.name}
                 </button>
@@ -472,13 +473,22 @@ export default function Gallery() {
             </div>
 
             {/* Gallery Grid */}
-            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3" role="list" aria-label="Galerie de réalisations">
               {filteredItems.map((item) => (
                 <div
                   key={item.id}
                   className="group cursor-pointer overflow-hidden rounded-lg shadow-md transition-all duration-300 hover:shadow-xl"
                   onClick={() => openModal(item.id)}
                   style={{ borderRadius: "0.5rem", WebkitBorderRadius: "0.5rem" }}
+                  role="listitem"
+                  tabIndex={0}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter" || e.key === " ") {
+                      e.preventDefault()
+                      openModal(item.id)
+                    }
+                  }}
+                  aria-label={`${item.title} - ${item.description}`}
                 >
                   <div className="relative h-64 w-full overflow-hidden">
                     <Image
@@ -505,6 +515,10 @@ export default function Gallery() {
             onClick={closeModal}
             onKeyDown={handleKeyDown}
             tabIndex={0}
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modal-title"
+            aria-describedby="modal-description"
           >
             <button
               className="absolute right-4 top-4 rounded-full bg-black/50 p-2 text-white transition-all hover:bg-black/70"
@@ -515,7 +529,7 @@ export default function Gallery() {
               style={{ borderRadius: "9999px", WebkitBorderRadius: "9999px" }}
               aria-label="Fermer la galerie"
             >
-              <X className="h-6 w-6" />
+              <X className="h-6 w-6" aria-hidden="true" />
             </button>
 
             {selectedImage && (
@@ -538,7 +552,7 @@ export default function Gallery() {
                     aria-label="Image précédente"
                     style={{ borderRadius: "9999px", WebkitBorderRadius: "9999px" }}
                   >
-                    <ChevronLeft className="h-6 w-6" />
+                    <ChevronLeft className="h-6 w-6" aria-hidden="true" />
                   </button>
 
                   <button
@@ -547,7 +561,7 @@ export default function Gallery() {
                     aria-label="Image suivante"
                     style={{ borderRadius: "9999px", WebkitBorderRadius: "9999px" }}
                   >
-                    <ChevronRight className="h-6 w-6" />
+                    <ChevronRight className="h-6 w-6" aria-hidden="true" />
                   </button>
                 </div>
 
@@ -556,10 +570,12 @@ export default function Gallery() {
                   className="w-full max-w-[90vw] rounded-b-lg bg-white p-4"
                   style={{ borderRadius: "0 0 0.5rem 0.5rem", WebkitBorderRadius: "0 0 0.5rem 0.5rem" }}
                 >
-                  <h3 className="text-xl font-semibold text-[#4F5960]">
+                  <h3 id="modal-title" className="text-xl font-semibold text-[#4F5960]">
                     {galleryItems.find((item) => item.id === selectedImage)?.title}
                   </h3>
-                  <p className="text-gray-600">{galleryItems.find((item) => item.id === selectedImage)?.description}</p>
+                  <p id="modal-description" className="text-gray-600">
+                    {galleryItems.find((item) => item.id === selectedImage)?.description}
+                  </p>
                 </div>
               </div>
             )}

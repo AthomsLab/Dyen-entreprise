@@ -3,6 +3,7 @@ import { Inter } from "next/font/google"
 import "./globals.css"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
+import SkipToContent from "@/components/skip-to-content"
 import type { Metadata } from "next"
 
 const inter = Inter({ subsets: ["latin"] })
@@ -97,8 +98,11 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body className={inter.className}>
+        <SkipToContent />
         <Header />
-        <main className="min-h-screen">{children}</main>
+        <main id="main-content" className="min-h-screen">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

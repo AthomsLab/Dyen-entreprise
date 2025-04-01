@@ -4,13 +4,17 @@ import Image from "next/image"
 
 export default function Footer() {
   return (
-    <footer className="relative bg-gradient-to-b from-[#4F5960] to-[#3a4248] text-white overflow-hidden">
+    <footer
+      className="relative bg-gradient-to-b from-[#4F5960] to-[#3a4248] text-white overflow-hidden"
+      role="contentinfo"
+    >
       {/* Texture subtile */}
       <div
         className="absolute inset-0 opacity-5"
         style={{
           backgroundImage: `url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fillOpacity='1' fillRule='evenodd'%3E%3Ccircle cx='3' cy='3' r='1'/%3E%3Ccircle cx='13' cy='13' r='1'/%3E%3C/g%3E%3C/svg%3E")`,
         }}
+        aria-hidden="true"
       ></div>
 
       <div className="container relative mx-auto px-4 py-12 z-10">
@@ -23,7 +27,7 @@ export default function Footer() {
                 <div className={`absolute inset-0 bg-white/70 z-0`}></div>
                 <Image
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo_transparent-XZVD5xQHj0QoSSd78TxlAKdquTq7hU.png"
-                  alt="DYEN Construction Bois"
+                  alt="DYEN Construction Bois - Logo"
                   width={220}
                   height={75}
                   className="relative z-10 p-1"
@@ -33,32 +37,34 @@ export default function Footer() {
             <p className="mb-4 text-white/80">
               Spécialiste en construction de chalets en bois, extensions et menuiserie depuis plus de 15 ans.
             </p>
-            <div className="flex space-x-4">
+            <div className="flex space-x-4" aria-label="Réseaux sociaux">
               <a
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-full bg-white/10 p-2 transition-colors hover:bg-[#A59765]"
-                aria-label="Facebook"
+                aria-label="Facebook Entreprise D'Yen"
               >
-                <Facebook className="h-5 w-5" />
+                <Facebook className="h-5 w-5" aria-hidden="true" />
               </a>
               <a
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-full bg-white/10 p-2 transition-colors hover:bg-[#A59765]"
-                aria-label="Instagram"
+                aria-label="Instagram Entreprise D'Yen"
               >
-                <Instagram className="h-5 w-5" />
+                <Instagram className="h-5 w-5" aria-hidden="true" />
               </a>
             </div>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="mb-4 text-xl font-bold">Liens Rapides</h3>
-            <ul className="space-y-2">
+            <h3 className="mb-4 text-xl font-bold" id="footer-links">
+              Liens Rapides
+            </h3>
+            <ul className="space-y-2" aria-labelledby="footer-links">
               <li>
                 <Link href="/" className="text-white/80 transition-colors hover:text-[#A59765]">
                   Accueil
@@ -94,10 +100,12 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h3 className="mb-4 text-xl font-bold">Contact</h3>
-            <ul className="space-y-3">
+            <h3 className="mb-4 text-xl font-bold" id="footer-contact">
+              Contact
+            </h3>
+            <ul className="space-y-3" aria-labelledby="footer-contact">
               <li className="flex items-start gap-3">
-                <MapPin className="mt-1 h-5 w-5 flex-shrink-0 text-[#A59765]" />
+                <MapPin className="mt-1 h-5 w-5 flex-shrink-0 text-[#A59765]" aria-hidden="true" />
                 <span className="text-white/80">
                   Chemin de la Cascade
                   <br />
@@ -107,33 +115,39 @@ export default function Footer() {
                 </span>
               </li>
               <li className="flex items-center gap-3">
-                <Phone className="h-5 w-5 flex-shrink-0 text-[#A59765]" />
-                <span className="text-white/80">04 92 83 44 25</span>
+                <Phone className="h-5 w-5 flex-shrink-0 text-[#A59765]" aria-hidden="true" />
+                <a href="tel:0492834425" className="text-white/80 hover:text-white">
+                  04 92 83 44 25
+                </a>
               </li>
               <li className="flex items-center gap-3">
-                <Mail className="h-5 w-5 flex-shrink-0 text-[#A59765]" />
-                <span className="text-white/80">entreprisedyen@hotmail.fr</span>
+                <Mail className="h-5 w-5 flex-shrink-0 text-[#A59765]" aria-hidden="true" />
+                <a href="mailto:entreprisedyen@hotmail.fr" className="text-white/80 hover:text-white">
+                  entreprisedyen@hotmail.fr
+                </a>
               </li>
             </ul>
           </div>
 
           {/* Hours */}
           <div>
-            <h3 className="mb-4 text-xl font-bold">Horaires</h3>
-            <ul className="space-y-2">
-              <li className="flex justify-between">
-                <span className="text-white/80">Lundi - Vendredi:</span>
-                <span className="text-white">8h30 - 18h00</span>
-              </li>
-              <li className="flex justify-between">
-                <span className="text-white/80">Samedi:</span>
-                <span className="text-white">9h00 - 12h00</span>
-              </li>
-              <li className="flex justify-between">
-                <span className="text-white/80">Dimanche:</span>
-                <span className="text-white">Fermé</span>
-              </li>
-            </ul>
+            <h3 className="mb-4 text-xl font-bold" id="footer-hours">
+              Horaires
+            </h3>
+            <dl className="space-y-2" aria-labelledby="footer-hours">
+              <div className="flex justify-between">
+                <dt className="text-white/80">Lundi - Vendredi:</dt>
+                <dd className="text-white">8h30 - 18h00</dd>
+              </div>
+              <div className="flex justify-between">
+                <dt className="text-white/80">Samedi:</dt>
+                <dd className="text-white">9h00 - 12h00</dd>
+              </div>
+              <div className="flex justify-between">
+                <dt className="text-white/80">Dimanche:</dt>
+                <dd className="text-white">Fermé</dd>
+              </div>
+            </dl>
           </div>
         </div>
 

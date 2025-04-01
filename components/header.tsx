@@ -52,11 +52,12 @@ export default function Header() {
       className={`fixed left-0 top-0 z-50 w-full transition-all duration-300 ${
         isScrolled ? "bg-white/95 py-3 shadow-md backdrop-blur-sm" : "bg-transparent py-5"
       }`}
+      role="banner"
     >
       <div className="w-full px-4 lg:px-4 md:px-3 sm:px-3 flex items-center justify-between">
         {/* Logo - positionné à gauche avec un padding fixe sur mobile */}
         <div className="w-[220px] lg:pl-5 md:pl-3 sm:pl-3">
-          <Link href="/" className="flex items-center gap-2">
+          <Link href="/" className="flex items-center gap-2" aria-label="Accueil Entreprise D'Yen">
             <div
               className="relative rounded-lg overflow-hidden"
               style={{ borderRadius: "0.5rem", WebkitBorderRadius: "0.5rem" }}
@@ -64,7 +65,7 @@ export default function Header() {
               <div className={`absolute inset-0 ${isScrolled ? "bg-transparent" : "bg-white/70"} z-0`}></div>
               <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo_transparent-XZVD5xQHj0QoSSd78TxlAKdquTq7hU.png"
-                alt="DYEN Construction Bois"
+                alt="DYEN Construction Bois - Logo"
                 width={220}
                 height={60}
                 className="relative z-10 p-1"
@@ -75,7 +76,7 @@ export default function Header() {
 
         {/* Navigation - parfaitement centrée */}
         <div className="absolute left-1/2 transform -translate-x-1/2">
-          <nav className="hidden lg:block">
+          <nav className="hidden lg:block" aria-label="Navigation principale">
             <ul className="flex items-center gap-8">
               <li>
                 <Link
@@ -143,10 +144,10 @@ export default function Header() {
                   ? "bg-[#A59765]/10 text-[#A59765] hover:bg-[#A59765] hover:text-white"
                   : "bg-white/10 text-white hover:bg-[#A59765]"
               }`}
-              aria-label="Facebook"
+              aria-label="Facebook Entreprise D'Yen"
               style={{ borderRadius: "9999px", WebkitBorderRadius: "9999px" }}
             >
-              <Facebook className="h-5 w-5" />
+              <Facebook className="h-5 w-5" aria-hidden="true" />
             </a>
             <a
               href="https://instagram.com"
@@ -157,10 +158,10 @@ export default function Header() {
                   ? "bg-[#A59765]/10 text-[#A59765] hover:bg-[#A59765] hover:text-white"
                   : "bg-white/10 text-white hover:bg-[#A59765]"
               }`}
-              aria-label="Instagram"
+              aria-label="Instagram Entreprise D'Yen"
               style={{ borderRadius: "9999px", WebkitBorderRadius: "9999px" }}
             >
-              <Instagram className="h-5 w-5" />
+              <Instagram className="h-5 w-5" aria-hidden="true" />
             </a>
           </div>
 
@@ -168,7 +169,9 @@ export default function Header() {
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="lg:hidden relative z-50 rounded-full p-2 transition-all duration-300"
-            aria-label="Toggle menu"
+            aria-label={isMenuOpen ? "Fermer le menu" : "Ouvrir le menu"}
+            aria-expanded={isMenuOpen}
+            aria-controls="mobile-menu"
             style={{
               backgroundColor: isMenuOpen
                 ? "white"
@@ -180,17 +183,26 @@ export default function Header() {
               WebkitBorderRadius: "9999px",
             }}
           >
-            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            {isMenuOpen ? (
+              <X className="h-6 w-6" aria-hidden="true" />
+            ) : (
+              <Menu className="h-6 w-6" aria-hidden="true" />
+            )}
           </button>
         </div>
       </div>
 
       {/* Mobile Menu - Redesigned */}
       <div
+        id="mobile-menu"
         className={`fixed inset-0 z-40 overflow-y-auto transition-all duration-500 lg:hidden ${
           isMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
         }`}
         style={{ height: "100vh" }}
+        aria-hidden={!isMenuOpen}
+        role="dialog"
+        aria-modal="true"
+        aria-label="Menu de navigation mobile"
       >
         {/* Fond avec dégradé et SVG de chalet */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#4F5960] to-[#3a4248] overflow-hidden">
@@ -200,6 +212,7 @@ export default function Header() {
             viewBox="0 0 800 600"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
           >
             <path d="M400 50L100 300H200V550H600V300H700L400 50Z" stroke="#A59765" strokeWidth="8" fill="none" />
             <path d="M350 550V400H450V550H350Z" stroke="#A59765" strokeWidth="8" fill="none" />
@@ -213,6 +226,7 @@ export default function Header() {
             style={{
               backgroundImage: `url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fillOpacity='1' fillRule='evenodd'%3E%3Ccircle cx='3' cy='3' r='1'/%3E%3Ccircle cx='13' cy='13' r='1'/%3E%3C/g%3E%3C/svg%3E")`,
             }}
+            aria-hidden="true"
           ></div>
         </div>
 
@@ -225,7 +239,7 @@ export default function Header() {
             >
               <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo_transparent-XZVD5xQHj0QoSSd78TxlAKdquTq7hU.png"
-                alt="DYEN Construction Bois"
+                alt="DYEN Construction Bois - Logo"
                 width={180}
                 height={50}
                 className="p-1"
@@ -233,7 +247,7 @@ export default function Header() {
             </div>
           </div>
 
-          <nav>
+          <nav aria-label="Navigation mobile">
             <ul className="flex flex-col gap-5">
               {/* Liens du menu avec animation et icônes - délais réduits */}
               <li
@@ -248,9 +262,9 @@ export default function Header() {
                   onClick={() => setIsMenuOpen(false)}
                   style={{ borderRadius: "0.5rem", WebkitBorderRadius: "0.5rem" }}
                 >
-                  <Home className="h-5 w-5 text-[#A59765]" />
+                  <Home className="h-5 w-5 text-[#A59765]" aria-hidden="true" />
                   <span className="text-lg font-medium">Accueil</span>
-                  <ChevronRight className="h-5 w-5 ml-auto" />
+                  <ChevronRight className="h-5 w-5 ml-auto" aria-hidden="true" />
                 </Link>
               </li>
 
@@ -266,9 +280,9 @@ export default function Header() {
                   onClick={() => setIsMenuOpen(false)}
                   style={{ borderRadius: "0.5rem", WebkitBorderRadius: "0.5rem" }}
                 >
-                  <Mountain className="h-5 w-5 text-[#A59765]" />
+                  <Mountain className="h-5 w-5 text-[#A59765]" aria-hidden="true" />
                   <span className="text-lg font-medium">Chalets & Extensions</span>
-                  <ChevronRight className="h-5 w-5 ml-auto" />
+                  <ChevronRight className="h-5 w-5 ml-auto" aria-hidden="true" />
                 </Link>
               </li>
 
@@ -284,9 +298,9 @@ export default function Header() {
                   onClick={() => setIsMenuOpen(false)}
                   style={{ borderRadius: "0.5rem", WebkitBorderRadius: "0.5rem" }}
                 >
-                  <Hammer className="h-5 w-5 text-[#A59765]" />
+                  <Hammer className="h-5 w-5 text-[#A59765]" aria-hidden="true" />
                   <span className="text-lg font-medium">Menuiserie</span>
-                  <ChevronRight className="h-5 w-5 ml-auto" />
+                  <ChevronRight className="h-5 w-5 ml-auto" aria-hidden="true" />
                 </Link>
               </li>
 
@@ -302,9 +316,9 @@ export default function Header() {
                   onClick={() => setIsMenuOpen(false)}
                   style={{ borderRadius: "0.5rem", WebkitBorderRadius: "0.5rem" }}
                 >
-                  <ImageIcon className="h-5 w-5 text-[#A59765]" />
+                  <ImageIcon className="h-5 w-5 text-[#A59765]" aria-hidden="true" />
                   <span className="text-lg font-medium">Galerie</span>
-                  <ChevronRight className="h-5 w-5 ml-auto" />
+                  <ChevronRight className="h-5 w-5 ml-auto" aria-hidden="true" />
                 </Link>
               </li>
 
@@ -320,9 +334,9 @@ export default function Header() {
                   onClick={() => setIsMenuOpen(false)}
                   style={{ borderRadius: "0.5rem", WebkitBorderRadius: "0.5rem" }}
                 >
-                  <Mail className="h-5 w-5 text-[#A59765]" />
+                  <Mail className="h-5 w-5 text-[#A59765]" aria-hidden="true" />
                   <span className="text-lg font-medium">Contact</span>
-                  <ChevronRight className="h-5 w-5 ml-auto" />
+                  <ChevronRight className="h-5 w-5 ml-auto" aria-hidden="true" />
                 </Link>
               </li>
             </ul>
@@ -340,9 +354,10 @@ export default function Header() {
               className="flex items-center justify-center gap-2 w-full rounded-full bg-[#A59765] px-6 py-4 text-lg font-medium text-white transition-all duration-300 hover:bg-[#8a7d53] hover:shadow-lg"
               onClick={() => setIsMenuOpen(false)}
               style={{ borderRadius: "9999px", WebkitBorderRadius: "9999px" }}
+              aria-label="Demander un devis pour votre projet"
             >
               Demander un devis
-              <ChevronRight className="h-5 w-5" />
+              <ChevronRight className="h-5 w-5" aria-hidden="true" />
             </Link>
           </div>
 
@@ -358,20 +373,20 @@ export default function Header() {
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-full bg-white/10 p-3 text-white transition-all hover:bg-[#A59765]"
-              aria-label="Facebook"
+              aria-label="Facebook Entreprise D'Yen"
               style={{ borderRadius: "9999px", WebkitBorderRadius: "9999px" }}
             >
-              <Facebook className="h-6 w-6" />
+              <Facebook className="h-6 w-6" aria-hidden="true" />
             </a>
             <a
               href="https://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-full bg-white/10 p-3 text-white transition-all hover:bg-[#A59765]"
-              aria-label="Instagram"
+              aria-label="Instagram Entreprise D'Yen"
               style={{ borderRadius: "9999px", WebkitBorderRadius: "9999px" }}
             >
-              <Instagram className="h-6 w-6" />
+              <Instagram className="h-6 w-6" aria-hidden="true" />
             </a>
           </div>
         </div>

@@ -208,120 +208,134 @@ export default function Contact() {
 
               {/* Contact Form */}
               <div className="lg:w-2/3">
-                <h2 className="mb-6 text-2xl font-bold text-[#4F5960] md:text-3xl">
-                  Envoyez-nous un <span className="text-[#A59765]">Message</span>
-                </h2>
+                <form onSubmit={handleSubmit} className="space-y-6" aria-labelledby="contact-form-heading" noValidate>
+                  <h2 id="contact-form-heading" className="mb-6 text-2xl font-bold text-[#4F5960] md:text-3xl">
+                    Envoyez-nous un <span className="text-[#A59765]">Message</span>
+                  </h2>
 
-                {isSubmitted ? (
-                  <div className="rounded-lg bg-green-50 p-6 text-green-700">
-                    <h3 className="mb-2 text-xl font-semibold">Message envoyé avec succès !</h3>
-                    <p>Merci de nous avoir contactés. Nous vous répondrons dans les plus brefs délais.</p>
-                  </div>
-                ) : (
-                  <form onSubmit={handleSubmit} className="space-y-6">
-                    <div className="grid gap-6 md:grid-cols-2">
-                      <div>
-                        <label htmlFor="name" className="mb-2 block text-sm font-medium text-[#4F5960]">
-                          Nom complet *
-                        </label>
-                        <input
-                          type="text"
-                          id="name"
-                          name="name"
-                          value={formData.name}
-                          onChange={handleChange}
-                          required
-                          className="w-full rounded-lg border border-gray-300 p-3 text-gray-700 focus:border-[#A59765] focus:outline-none focus:ring-1 focus:ring-[#A59765]"
-                          aria-describedby="name-help"
-                        />
-                      </div>
-
-                      <div>
-                        <label htmlFor="email" className="mb-2 block text-sm font-medium text-[#4F5960]">
-                          Email *
-                        </label>
-                        <input
-                          type="email"
-                          id="email"
-                          name="email"
-                          value={formData.email}
-                          onChange={handleChange}
-                          required
-                          className="w-full rounded-lg border border-gray-300 p-3 text-gray-700 focus:border-[#A59765] focus:outline-none focus:ring-1 focus:ring-[#A59765]"
-                          aria-describedby="email-help"
-                        />
-                      </div>
+                  {isSubmitted ? (
+                    <div className="rounded-lg bg-green-50 p-6 text-green-700" role="alert" aria-live="polite">
+                      <h3 className="mb-2 text-xl font-semibold">Message envoyé avec succès !</h3>
+                      <p>Merci de nous avoir contactés. Nous vous répondrons dans les plus brefs délais.</p>
                     </div>
+                  ) : (
+                    <div className="space-y-6">
+                      <div className="grid gap-6 md:grid-cols-2">
+                        <div>
+                          <label htmlFor="name" className="mb-2 block text-sm font-medium text-[#4F5960]">
+                            Nom complet *
+                          </label>
+                          <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            value={formData.name}
+                            onChange={handleChange}
+                            required
+                            className="w-full rounded-lg border border-gray-300 p-3 text-gray-700 focus:border-[#A59765] focus:outline-none focus:ring-1 focus:ring-[#A59765]"
+                            aria-required="true"
+                            aria-describedby="name-help"
+                          />
+                          <div id="name-help" className="sr-only">
+                            Veuillez entrer votre nom complet
+                          </div>
+                        </div>
 
-                    <div className="grid gap-6 md:grid-cols-2">
+                        <div>
+                          <label htmlFor="email" className="mb-2 block text-sm font-medium text-[#4F5960]">
+                            Email *
+                          </label>
+                          <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            value={formData.email}
+                            onChange={handleChange}
+                            required
+                            className="w-full rounded-lg border border-gray-300 p-3 text-gray-700 focus:border-[#A59765] focus:outline-none focus:ring-1 focus:ring-[#A59765]"
+                            aria-required="true"
+                            aria-describedby="email-help"
+                          />
+                          <div id="email-help" className="sr-only">
+                            Veuillez entrer une adresse email valide
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="grid gap-6 md:grid-cols-2">
+                        <div>
+                          <label htmlFor="phone" className="mb-2 block text-sm font-medium text-[#4F5960]">
+                            Téléphone
+                          </label>
+                          <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            value={formData.phone}
+                            onChange={handleChange}
+                            className="w-full rounded-lg border border-gray-300 p-3 text-gray-700 focus:border-[#A59765] focus:outline-none focus:ring-1 focus:ring-[#A59765]"
+                            aria-describedby="phone-help"
+                          />
+                        </div>
+
+                        <div>
+                          <label htmlFor="subject" className="mb-2 block text-sm font-medium text-[#4F5960]">
+                            Sujet *
+                          </label>
+                          <select
+                            id="subject"
+                            name="subject"
+                            value={formData.subject}
+                            onChange={handleChange}
+                            required
+                            className="w-full rounded-lg border border-gray-300 p-3 text-gray-700 focus:border-[#A59765] focus:outline-none focus:ring-1 focus:ring-[#A59765]"
+                            aria-describedby="subject-help"
+                          >
+                            <option value="">Sélectionnez un sujet</option>
+                            <option value="devis-chalet">Devis chalet en bois</option>
+                            <option value="devis-extension">Devis extension</option>
+                            <option value="devis-menuiserie">Devis menuiserie</option>
+                            <option value="devis-amenagement">Devis aménagement intérieur</option>
+                            <option value="information">Demande d'information</option>
+                            <option value="autre">Autre</option>
+                          </select>
+                        </div>
+                      </div>
+
                       <div>
-                        <label htmlFor="phone" className="mb-2 block text-sm font-medium text-[#4F5960]">
-                          Téléphone
+                        <label htmlFor="message" className="mb-2 block text-sm font-medium text-[#4F5960]">
+                          Message *
                         </label>
-                        <input
-                          type="tel"
-                          id="phone"
-                          name="phone"
-                          value={formData.phone}
+                        <textarea
+                          id="message"
+                          name="message"
+                          value={formData.message}
                           onChange={handleChange}
+                          required
+                          rows={6}
                           className="w-full rounded-lg border border-gray-300 p-3 text-gray-700 focus:border-[#A59765] focus:outline-none focus:ring-1 focus:ring-[#A59765]"
-                          aria-describedby="phone-help"
+                          aria-describedby="message-help"
                         />
                       </div>
 
                       <div>
-                        <label htmlFor="subject" className="mb-2 block text-sm font-medium text-[#4F5960]">
-                          Sujet *
-                        </label>
-                        <select
-                          id="subject"
-                          name="subject"
-                          value={formData.subject}
-                          onChange={handleChange}
-                          required
-                          className="w-full rounded-lg border border-gray-300 p-3 text-gray-700 focus:border-[#A59765] focus:outline-none focus:ring-1 focus:ring-[#A59765]"
-                          aria-describedby="subject-help"
+                        <button
+                          type="submit"
+                          disabled={isSubmitting}
+                          className="group inline-flex items-center gap-2 rounded-full bg-[#A59765] px-6 py-3 text-lg font-medium text-white transition-all duration-300 hover:bg-[#8a7d53] hover:shadow-lg disabled:opacity-70"
+                          aria-label="Envoyer votre message à Entreprise D'Yen"
+                          aria-busy={isSubmitting}
                         >
-                          <option value="">Sélectionnez un sujet</option>
-                          <option value="devis-chalet">Devis chalet en bois</option>
-                          <option value="devis-extension">Devis extension</option>
-                          <option value="devis-menuiserie">Devis menuiserie</option>
-                          <option value="devis-amenagement">Devis aménagement intérieur</option>
-                          <option value="information">Demande d'information</option>
-                          <option value="autre">Autre</option>
-                        </select>
+                          {isSubmitting ? "Envoi en cours..." : "Envoyer le message"}
+                          <ArrowRight
+                            className="transition-transform duration-300 group-hover:translate-x-1"
+                            aria-hidden="true"
+                          />
+                        </button>
                       </div>
                     </div>
-
-                    <div>
-                      <label htmlFor="message" className="mb-2 block text-sm font-medium text-[#4F5960]">
-                        Message *
-                      </label>
-                      <textarea
-                        id="message"
-                        name="message"
-                        value={formData.message}
-                        onChange={handleChange}
-                        required
-                        rows={6}
-                        className="w-full rounded-lg border border-gray-300 p-3 text-gray-700 focus:border-[#A59765] focus:outline-none focus:ring-1 focus:ring-[#A59765]"
-                        aria-describedby="message-help"
-                      />
-                    </div>
-
-                    <div>
-                      <button
-                        type="submit"
-                        disabled={isSubmitting}
-                        className="group inline-flex items-center gap-2 rounded-full bg-[#A59765] px-6 py-3 text-lg font-medium text-white transition-all duration-300 hover:bg-[#8a7d53] hover:shadow-lg disabled:opacity-70"
-                        aria-label="Envoyer votre message à Entreprise D'Yen"
-                      >
-                        {isSubmitting ? "Envoi en cours..." : "Envoyer le message"}
-                        <ArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
-                      </button>
-                    </div>
-                  </form>
-                )}
+                  )}
+                </form>
               </div>
             </div>
           </div>
