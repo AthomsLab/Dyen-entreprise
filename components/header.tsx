@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import Link from "next/link"
 import { Menu, X, Facebook, Instagram, Home, Mountain, Hammer, ImageIcon, Mail, ChevronRight } from "lucide-react"
 import Image from "next/image"
@@ -9,6 +9,43 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
   const [animateItems, setAnimateItems] = useState(false)
+  const toggleRef = useRef<HTMLButtonElement>(null)
+  const menuRef = useRef<HTMLDivElement>(null)
+  const wasOpen = useRef(false)
+
+  // Accessibilité : Échap ferme, focus piégé dans le menu, reste de la page inerte, retour du focus au bouton
+  useEffect(() => {
+    const outside = document.querySelectorAll<HTMLElement>("main, footer, a[href='#main-content']")
+    outside.forEach((el) => (isMenuOpen ? el.setAttribute("inert", "") : el.removeAttribute("inert")))
+    if (!isMenuOpen) {
+      if (wasOpen.current) toggleRef.current?.focus()
+      wasOpen.current = false
+      return
+    }
+    wasOpen.current = true
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setIsMenuOpen(false)
+        return
+      }
+      if (e.key !== "Tab" || !menuRef.current || !toggleRef.current) return
+      const items = [toggleRef.current, ...Array.from(menuRef.current.querySelectorAll<HTMLElement>("a[href], button"))]
+      const first = items[0]
+      const last = items[items.length - 1]
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault()
+        last.focus()
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault()
+        first.focus()
+      }
+    }
+    document.addEventListener("keydown", onKey)
+    return () => {
+      document.removeEventListener("keydown", onKey)
+      outside.forEach((el) => el.removeAttribute("inert"))
+    }
+  }, [isMenuOpen])
 
   // Handle scroll event to change header style
   useEffect(() => {
@@ -141,8 +178,8 @@ export default function Header() {
               rel="noopener noreferrer"
               className={`rounded-full p-2 transition-colors ${
                 isScrolled
-                  ? "bg-[#A59765]/10 text-[#A59765] hover:bg-[#A59765] hover:text-white"
-                  : "bg-white/10 text-white hover:bg-[#A59765]"
+                  ? "bg-[#A59765]/10 text-[#A59765] hover:bg-[#7a6e43] hover:text-white"
+                  : "bg-white/10 text-white hover:bg-[#7a6e43]"
               }`}
               aria-label="Facebook Cimes & Bois"
               style={{ borderRadius: "9999px", WebkitBorderRadius: "9999px" }}
@@ -155,8 +192,8 @@ export default function Header() {
               rel="noopener noreferrer"
               className={`rounded-full p-2 transition-colors ${
                 isScrolled
-                  ? "bg-[#A59765]/10 text-[#A59765] hover:bg-[#A59765] hover:text-white"
-                  : "bg-white/10 text-white hover:bg-[#A59765]"
+                  ? "bg-[#A59765]/10 text-[#A59765] hover:bg-[#7a6e43] hover:text-white"
+                  : "bg-white/10 text-white hover:bg-[#7a6e43]"
               }`}
               aria-label="Instagram Cimes & Bois"
               style={{ borderRadius: "9999px", WebkitBorderRadius: "9999px" }}
@@ -167,6 +204,8 @@ export default function Header() {
 
           {/* Mobile Menu Button */}
           <button
+            ref={toggleRef}
+            type="button"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="lg:hidden relative z-50 rounded-full p-2 transition-all duration-300"
             aria-label={isMenuOpen ? "Fermer le menu" : "Ouvrir le menu"}
@@ -195,11 +234,12 @@ export default function Header() {
       {/* Mobile Menu - Redesigned */}
       <div
         id="mobile-menu"
+        ref={menuRef}
+        inert={!isMenuOpen ? true : undefined}
         className={`fixed inset-0 z-40 overflow-y-auto transition-all duration-500 lg:hidden ${
-          isMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+          isMenuOpen ? "visible opacity-100 pointer-events-auto" : "invisible opacity-0 pointer-events-none"
         }`}
         style={{ height: "100vh" }}
-        aria-hidden={!isMenuOpen}
         role="dialog"
         aria-modal="true"
         aria-label="Menu de navigation mobile"
@@ -351,10 +391,10 @@ export default function Header() {
           >
             <Link
               href="/contact"
-              className="flex items-center justify-center gap-2 w-full rounded-full bg-[#A59765] px-6 py-4 text-lg font-medium text-white transition-all duration-300 hover:bg-[#8a7d53] hover:shadow-lg"
+              className="flex items-center justify-center gap-2 w-full rounded-full bg-[#7a6e43] px-6 py-4 text-lg font-medium text-white transition-all duration-300 hover:bg-[#665c37] hover:shadow-lg"
               onClick={() => setIsMenuOpen(false)}
               style={{ borderRadius: "9999px", WebkitBorderRadius: "9999px" }}
-              aria-label="Demander un devis pour votre projet"
+              
             >
               Demander un devis
               <ChevronRight className="h-5 w-5" aria-hidden="true" />
@@ -372,7 +412,7 @@ export default function Header() {
               href="https://facebook.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full bg-white/10 p-3 text-white transition-all hover:bg-[#A59765]"
+              className="rounded-full bg-white/10 p-3 text-white transition-all hover:bg-[#7a6e43]"
               aria-label="Facebook Cimes & Bois"
               style={{ borderRadius: "9999px", WebkitBorderRadius: "9999px" }}
             >
@@ -382,7 +422,7 @@ export default function Header() {
               href="https://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full bg-white/10 p-3 text-white transition-all hover:bg-[#A59765]"
+              className="rounded-full bg-white/10 p-3 text-white transition-all hover:bg-[#7a6e43]"
               aria-label="Instagram Cimes & Bois"
               style={{ borderRadius: "9999px", WebkitBorderRadius: "9999px" }}
             >

@@ -42,7 +42,7 @@ export default function Footer() {
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-full bg-white/10 p-2 transition-colors hover:bg-[#A59765]"
+                className="rounded-full bg-white/10 p-2 transition-colors hover:bg-[#7a6e43]"
                 aria-label="Facebook Cimes & Bois"
               >
                 <Facebook className="h-5 w-5" aria-hidden="true" />
@@ -51,7 +51,7 @@ export default function Footer() {
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-full bg-white/10 p-2 transition-colors hover:bg-[#A59765]"
+                className="rounded-full bg-white/10 p-2 transition-colors hover:bg-[#7a6e43]"
                 aria-label="Instagram Cimes & Bois"
               >
                 <Instagram className="h-5 w-5" aria-hidden="true" />
@@ -61,9 +61,9 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="mb-4 text-xl font-bold" id="footer-links">
+            <h2 className="mb-4 text-xl font-bold" id="footer-links">
               Liens Rapides
-            </h3>
+            </h2>
             <ul className="space-y-2" aria-labelledby="footer-links">
               <li>
                 <Link href="/" className="text-white/80 transition-colors hover:text-[#A59765]">
@@ -100,9 +100,9 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h3 className="mb-4 text-xl font-bold" id="footer-contact">
+            <h2 className="mb-4 text-xl font-bold" id="footer-contact">
               Contact
-            </h3>
+            </h2>
             <ul className="space-y-3" aria-labelledby="footer-contact">
               <li className="flex items-start gap-3">
                 <MapPin className="mt-1 h-5 w-5 flex-shrink-0 text-[#A59765]" aria-hidden="true" />
@@ -131,9 +131,9 @@ export default function Footer() {
 
           {/* Hours */}
           <div>
-            <h3 className="mb-4 text-xl font-bold" id="footer-hours">
+            <h2 className="mb-4 text-xl font-bold" id="footer-hours">
               Horaires
-            </h3>
+            </h2>
             <dl className="space-y-2" aria-labelledby="footer-hours">
               <div className="flex justify-between">
                 <dt className="text-white/80">Lundi - Vendredi:</dt>

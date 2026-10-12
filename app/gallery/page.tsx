@@ -460,7 +460,7 @@ export default function Gallery() {
                   onClick={() => setSelectedCategory(category.id)}
                   className={`rounded-full px-6 py-2 text-sm font-medium transition-all duration-300 ${
                     selectedCategory === category.id
-                      ? "bg-[#A59765] text-white"
+                      ? "bg-[#7a6e43] text-white"
                       : "bg-gray-100 text-gray-700 hover:bg-gray-200"
                   }`}
                   style={{ borderRadius: "9999px", WebkitBorderRadius: "9999px" }}
@@ -499,7 +499,7 @@ export default function Gallery() {
                     />
                   </div>
                   <div className="p-4">
-                    <h3 className="text-lg font-semibold text-[#4F5960]">{item.title}</h3>
+                    <h2 className="text-lg font-semibold text-[#4F5960]">{item.title}</h2>
                     <p className="text-sm text-gray-600">{item.description}</p>
                   </div>
                 </div>
@@ -570,9 +570,9 @@ export default function Gallery() {
                   className="w-full max-w-[90vw] rounded-b-lg bg-white p-4"
                   style={{ borderRadius: "0 0 0.5rem 0.5rem", WebkitBorderRadius: "0 0 0.5rem 0.5rem" }}
                 >
-                  <h3 id="modal-title" className="text-xl font-semibold text-[#4F5960]">
+                  <h2 id="modal-title" className="text-xl font-semibold text-[#4F5960]">
                     {galleryItems.find((item) => item.id === selectedImage)?.title}
-                  </h3>
+                  </h2>
                   <p id="modal-description" className="text-gray-600">
                     {galleryItems.find((item) => item.id === selectedImage)?.description}
                   </p>

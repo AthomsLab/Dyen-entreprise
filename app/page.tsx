@@ -113,7 +113,7 @@ export default function Home() {
           <div className="absolute inset-0 flex flex-col items-center justify-center px-4 text-center text-white">
             <h1 className="animate-fade-in-up mb-6 text-4xl font-bold leading-tight md:text-5xl lg:text-6xl">
               Construisons ensemble <br />
-              <span className="text-[#A59765]">votre espace de vie idéal</span>
+              <span className="text-[#7a6e43]">votre espace de vie idéal</span>
             </h1>
             <p className="animate-fade-in-up animation-delay-300 mb-8 max-w-2xl text-lg md:text-xl">
               Implantée à Val-des-Cimes au cœur des Alpes, l'entreprise CIMES & BOIS vous propose
@@ -121,7 +121,7 @@ export default function Home() {
             </p>
             <Link
               href="/contact"
-              className="animate-fade-in-up animation-delay-600 group flex items-center gap-2 rounded-full bg-[#A59765] px-6 py-3 text-lg font-medium text-white transition-all duration-300 hover:bg-[#8a7d53] hover:shadow-lg"
+              className="animate-fade-in-up animation-delay-600 group flex items-center gap-2 rounded-full bg-[#7a6e43] px-6 py-3 text-lg font-medium text-white transition-all duration-300 hover:bg-[#665c37] hover:shadow-lg"
               aria-label="Demander un devis pour votre projet de construction en bois"
             >
               Demander un devis
@@ -134,7 +134,7 @@ export default function Home() {
         <section className="py-20" aria-labelledby="services-heading">
           <div className="container mx-auto px-4">
             <h2 id="services-heading" className="mb-16 text-center text-3xl font-bold text-[#4F5960] md:text-4xl">
-              Nos <span className="text-[#A59765]">Services</span>
+              Nos <span className="text-[#7a6e43]">Services</span>
             </h2>
 
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -156,7 +156,7 @@ export default function Home() {
                 </p>
                 <Link
                   href="/chalets"
-                  className="flex items-center gap-2 text-[#A59765] transition-all duration-300 hover:text-[#8a7d53]"
+                  className="flex items-center gap-2 text-[#7a6e43] transition-all duration-300 hover:text-[#8a7d53]"
                   aria-label="Découvrir nos services de construction et rénovation de chalets en bois"
                 >
                   Découvrir
@@ -182,7 +182,7 @@ export default function Home() {
                 </p>
                 <Link
                   href="/chalets#extensions"
-                  className="flex items-center gap-2 text-[#A59765] transition-all duration-300 hover:text-[#8a7d53]"
+                  className="flex items-center gap-2 text-[#7a6e43] transition-all duration-300 hover:text-[#8a7d53]"
                   aria-label="Découvrir nos services d'extension et charpente en bois"
                 >
                   Découvrir
@@ -208,7 +208,7 @@ export default function Home() {
                 </p>
                 <Link
                   href="/carpentry"
-                  className="flex items-center gap-2 text-[#A59765] transition-all duration-300 hover:text-[#8a7d53]"
+                  className="flex items-center gap-2 text-[#7a6e43] transition-all duration-300 hover:text-[#8a7d53]"
                   aria-label="Découvrir nos services de menuiserie et agencement sur mesure"
                 >
                   Découvrir
@@ -223,14 +223,14 @@ export default function Home() {
         <section className="bg-[#f8f7f4] py-20" aria-labelledby="benefits-heading">
           <div className="container mx-auto px-4">
             <h2 id="benefits-heading" className="mb-16 text-center text-3xl font-bold text-[#4F5960] md:text-4xl">
-              Pourquoi <span className="text-[#A59765]">Nous Choisir</span>
+              Pourquoi <span className="text-[#7a6e43]">Nous Choisir</span>
             </h2>
 
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
               {/* Benefit 1 */}
               <div className="flex flex-col items-center text-center">
                 <div className="mb-4 rounded-full bg-[#A59765]/10 p-4">
-                  <Leaf className="h-8 w-8 text-[#A59765]" />
+                  <Leaf className="h-8 w-8 text-[#7a6e43]" />
                 </div>
                 <h3 className="mb-2 text-xl font-semibold text-[#4F5960]">Écologique</h3>
                 <p className="text-gray-600">
@@ -241,7 +241,7 @@ export default function Home() {
               {/* Benefit 2 */}
               <div className="flex flex-col items-center text-center">
                 <div className="mb-4 rounded-full bg-[#A59765]/10 p-4">
-                  <Clock className="h-8 w-8 text-[#A59765]" />
+                  <Clock className="h-8 w-8 text-[#7a6e43]" />
                 </div>
                 <h3 className="mb-2 text-xl font-semibold text-[#4F5960]">Rapidité</h3>
                 <p className="text-gray-600">
@@ -252,7 +252,7 @@ export default function Home() {
               {/* Benefit 3 */}
               <div className="flex flex-col items-center text-center">
                 <div className="mb-4 rounded-full bg-[#A59765]/10 p-4">
-                  <Award className="h-8 w-8 text-[#A59765]" />
+                  <Award className="h-8 w-8 text-[#7a6e43]" />
                 </div>
                 <h3 className="mb-2 text-xl font-semibold text-[#4F5960]">Qualité</h3>
                 <p className="text-gray-600">
@@ -263,7 +263,7 @@ export default function Home() {
               {/* Benefit 4 */}
               <div className="flex flex-col items-center text-center">
                 <div className="mb-4 rounded-full bg-[#A59765]/10 p-4">
-                  <Shield className="h-8 w-8 text-[#A59765]" />
+                  <Shield className="h-8 w-8 text-[#7a6e43]" />
                 </div>
                 <h3 className="mb-2 text-xl font-semibold text-[#4F5960]">Accompagnement</h3>
                 <p className="text-gray-600">
@@ -278,7 +278,7 @@ export default function Home() {
         <section className="py-20" aria-labelledby="gallery-heading">
           <div className="container mx-auto px-4">
             <h2 id="gallery-heading" className="mb-6 text-center text-3xl font-bold text-[#4F5960] md:text-4xl">
-              Nos <span className="text-[#A59765]">Réalisations</span>
+              Nos <span className="text-[#7a6e43]">Réalisations</span>
             </h2>
             <p className="mb-12 text-center text-gray-600">
               Découvrez quelques-unes de nos réalisations récentes à Val-des-Cimes et dans le Val des Cimes
@@ -344,7 +344,7 @@ export default function Home() {
             <div className="mt-12 flex justify-center">
               <Link
                 href="/gallery"
-                className="group flex items-center gap-2 rounded-full border-2 border-[#A59765] px-6 py-3 text-lg font-medium text-[#A59765] transition-all duration-300 hover:bg-[#A59765] hover:text-white"
+                className="group flex items-center gap-2 rounded-full border-2 border-[#A59765] px-6 py-3 text-lg font-medium text-[#7a6e43] transition-all duration-300 hover:bg-[#7a6e43] hover:text-white"
                 aria-label="Voir toutes nos réalisations de construction en bois dans le Val des Cimes"
               >
                 Voir toutes nos réalisations
@@ -375,7 +375,7 @@ export default function Home() {
             </p>
             <Link
               href="/contact"
-              className="group inline-flex items-center gap-2 rounded-full bg-[#A59765] px-8 py-4 text-lg font-medium text-white transition-all duration-300 hover:bg-[#8a7d53] hover:shadow-lg"
+              className="group inline-flex items-center gap-2 rounded-full bg-[#7a6e43] px-8 py-4 text-lg font-medium text-white transition-all duration-300 hover:bg-[#665c37] hover:shadow-lg"
               aria-label="Contacter Cimes & Bois pour votre projet de construction en bois"
             >
               Nous contacter

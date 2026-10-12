@@ -111,7 +111,7 @@ export default function Contact() {
           />
           <div className="absolute inset-0 flex flex-col items-center justify-center px-4 text-center text-white">
             <h1 className="animate-fade-in-up mb-6 text-4xl font-bold leading-tight md:text-5xl">
-              <span className="text-[#A59765]">Contactez</span>-Nous
+              <span className="text-[#7a6e43]">Contactez</span>-Nous
             </h1>
             <p className="animate-fade-in-up animation-delay-300 mb-8 max-w-2xl text-lg md:text-xl">
               Nous sommes à votre écoute pour répondre à toutes vos questions sur vos projets à Val-des-Cimes et dans le
@@ -127,13 +127,13 @@ export default function Contact() {
               {/* Contact Information */}
               <div className="lg:w-1/3">
                 <h2 className="mb-6 text-2xl font-bold text-[#4F5960] md:text-3xl">
-                  Nos <span className="text-[#A59765]">Coordonnées</span>
+                  Nos <span className="text-[#7a6e43]">Coordonnées</span>
                 </h2>
 
                 <div className="mb-8 space-y-6">
                   <div className="flex items-start gap-4">
                     <div className="rounded-full bg-[#A59765]/10 p-3">
-                      <MapPin className="h-6 w-6 text-[#A59765]" />
+                      <MapPin className="h-6 w-6 text-[#7a6e43]" />
                     </div>
                     <div>
                       <h3 className="text-lg font-semibold text-[#4F5960]">Adresse</h3>
@@ -149,7 +149,7 @@ export default function Contact() {
 
                   <div className="flex items-start gap-4">
                     <div className="rounded-full bg-[#A59765]/10 p-3">
-                      <Phone className="h-6 w-6 text-[#A59765]" />
+                      <Phone className="h-6 w-6 text-[#7a6e43]" />
                     </div>
                     <div>
                       <h3 className="text-lg font-semibold text-[#4F5960]">Téléphone</h3>
@@ -159,7 +159,7 @@ export default function Contact() {
 
                   <div className="flex items-start gap-4">
                     <div className="rounded-full bg-[#A59765]/10 p-3">
-                      <Mail className="h-6 w-6 text-[#A59765]" />
+                      <Mail className="h-6 w-6 text-[#7a6e43]" />
                     </div>
                     <div>
                       <h3 className="text-lg font-semibold text-[#4F5960]">Email</h3>
@@ -209,7 +209,7 @@ export default function Contact() {
               <div className="lg:w-2/3">
                 <form onSubmit={handleSubmit} className="space-y-6" aria-labelledby="contact-form-heading" noValidate>
                   <h2 id="contact-form-heading" className="mb-6 text-2xl font-bold text-[#4F5960] md:text-3xl">
-                    Envoyez-nous un <span className="text-[#A59765]">Message</span>
+                    Envoyez-nous un <span className="text-[#7a6e43]">Message</span>
                   </h2>
 
                   {isSubmitted ? (
@@ -321,7 +321,7 @@ export default function Contact() {
                         <button
                           type="submit"
                           disabled={isSubmitting}
-                          className="group inline-flex items-center gap-2 rounded-full bg-[#A59765] px-6 py-3 text-lg font-medium text-white transition-all duration-300 hover:bg-[#8a7d53] hover:shadow-lg disabled:opacity-70"
+                          className="group inline-flex items-center gap-2 rounded-full bg-[#7a6e43] px-6 py-3 text-lg font-medium text-white transition-all duration-300 hover:bg-[#665c37] hover:shadow-lg disabled:opacity-70"
                           aria-label="Envoyer votre message à Cimes & Bois"
                           aria-busy={isSubmitting}
                         >
@@ -344,7 +344,7 @@ export default function Contact() {
         <section className="py-10">
           <div className="container mx-auto px-4">
             <h2 className="mb-8 text-center text-2xl font-bold text-[#4F5960] md:text-3xl">
-              Nous <span className="text-[#A59765]">Trouver</span>
+              Nous <span className="text-[#7a6e43]">Trouver</span>
             </h2>
 
             <div className="h-[400px] w-full overflow-hidden rounded-lg shadow-lg">
