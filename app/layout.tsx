@@ -2,6 +2,7 @@ import type React from "react"
 import { Inter } from "next/font/google"
 import "./globals.css"
 import Header from "@/components/header"
+import ScrollReveal from "@/components/scroll-reveal"
 import Footer from "@/components/footer"
 import SkipToContent from "@/components/skip-to-content"
 import type { Metadata } from "next"
@@ -104,6 +105,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <ScrollReveal />
       </body>
     </html>
   )
