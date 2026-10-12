@@ -69,4 +69,4 @@ html {
   }
 }
 
-iframe:focus-visible { outline: 3px solid #4F5960; outline-offset: 2px; }
+iframe:focus { outline: 3px solid #4F5960; outline-offset: 2px; }
