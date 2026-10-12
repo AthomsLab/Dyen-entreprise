@@ -3,8 +3,8 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://entreprisedyen.vercel.app
+Host: https://cimes-et-bois.vercel.app
 
 # Sitemaps
-Sitemap: https://entreprisedyen.vercel.app/sitemap.xml
+Sitemap: https://cimes-et-bois.vercel.app/sitemap.xml
 

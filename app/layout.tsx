@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://entreprisedyen.vercel.app"),
+  metadataBase: new URL("https://cimes-et-bois.vercel.app"),
   alternates: {
     canonical: "/",
   },
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     title: "Cimes & Bois - Construction de chalets en bois en montagne",
     description:
       "Spécialiste depuis 1936 en construction de chalets en bois, extensions, menuiserie et aménagements intérieurs à Val-des-Cimes dans le Val des Cimes.",
-    url: "https://entreprisedyen.vercel.app",
+    url: "https://cimes-et-bois.vercel.app",
     siteName: "Cimes & Bois",
     locale: "fr_FR",
     type: "website",

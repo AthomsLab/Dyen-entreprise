@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://entreprisedyen.vercel.app</loc>
+    <loc>https://cimes-et-bois.vercel.app</loc>
     <lastmod>2025-04-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://entreprisedyen.vercel.app/chalets</loc>
+    <loc>https://cimes-et-bois.vercel.app/chalets</loc>
     <lastmod>2025-04-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://entreprisedyen.vercel.app/carpentry</loc>
+    <loc>https://cimes-et-bois.vercel.app/carpentry</loc>
     <lastmod>2025-04-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://entreprisedyen.vercel.app/gallery</loc>
+    <loc>https://cimes-et-bois.vercel.app/gallery</loc>
     <lastmod>2025-04-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://entreprisedyen.vercel.app/contact</loc>
+    <loc>https://cimes-et-bois.vercel.app/contact</loc>
     <lastmod>2025-04-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

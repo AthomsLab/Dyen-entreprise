@@ -28,8 +28,8 @@ export default function Home() {
               "/images/logo.svg",
             description:
               "Spécialiste depuis 1936 en construction de chalets en bois, extensions, menuiserie et aménagements intérieurs.",
-            "@id": "https://entreprisedyen.vercel.app",
-            url: "https://entreprisedyen.vercel.app",
+            "@id": "https://cimes-et-bois.vercel.app",
+            url: "https://cimes-et-bois.vercel.app",
             telephone: "01 23 45 67 89",
             email: "contact@cimes-et-bois.example",
             address: {
