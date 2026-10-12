@@ -57,15 +57,15 @@ export default function Header() {
       <div className="w-full px-4 lg:px-4 md:px-3 sm:px-3 flex items-center justify-between">
         {/* Logo - positionné à gauche avec un padding fixe sur mobile */}
         <div className="w-[220px] lg:pl-5 md:pl-3 sm:pl-3">
-          <Link href="/" className="flex items-center gap-2" aria-label="Accueil Entreprise D'Yen">
+          <Link href="/" className="flex items-center gap-2" aria-label="Accueil Cimes & Bois">
             <div
               className="relative rounded-lg overflow-hidden"
               style={{ borderRadius: "0.5rem", WebkitBorderRadius: "0.5rem" }}
             >
               <div className={`absolute inset-0 ${isScrolled ? "bg-transparent" : "bg-white/70"} z-0`}></div>
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo_transparent-XZVD5xQHj0QoSSd78TxlAKdquTq7hU.png"
-                alt="DYEN Construction Bois - Logo"
+                src="/images/logo.svg"
+                alt="Cimes & Bois - Logo"
                 width={220}
                 height={60}
                 className="relative z-10 p-1"
@@ -144,7 +144,7 @@ export default function Header() {
                   ? "bg-[#A59765]/10 text-[#A59765] hover:bg-[#A59765] hover:text-white"
                   : "bg-white/10 text-white hover:bg-[#A59765]"
               }`}
-              aria-label="Facebook Entreprise D'Yen"
+              aria-label="Facebook Cimes & Bois"
               style={{ borderRadius: "9999px", WebkitBorderRadius: "9999px" }}
             >
               <Facebook className="h-5 w-5" aria-hidden="true" />
@@ -158,7 +158,7 @@ export default function Header() {
                   ? "bg-[#A59765]/10 text-[#A59765] hover:bg-[#A59765] hover:text-white"
                   : "bg-white/10 text-white hover:bg-[#A59765]"
               }`}
-              aria-label="Instagram Entreprise D'Yen"
+              aria-label="Instagram Cimes & Bois"
               style={{ borderRadius: "9999px", WebkitBorderRadius: "9999px" }}
             >
               <Instagram className="h-5 w-5" aria-hidden="true" />
@@ -238,8 +238,8 @@ export default function Header() {
               style={{ borderRadius: "0.5rem", WebkitBorderRadius: "0.5rem" }}
             >
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo_transparent-XZVD5xQHj0QoSSd78TxlAKdquTq7hU.png"
-                alt="DYEN Construction Bois - Logo"
+                src="/images/logo.svg"
+                alt="Cimes & Bois - Logo"
                 width={180}
                 height={50}
                 className="p-1"
@@ -373,7 +373,7 @@ export default function Header() {
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-full bg-white/10 p-3 text-white transition-all hover:bg-[#A59765]"
-              aria-label="Facebook Entreprise D'Yen"
+              aria-label="Facebook Cimes & Bois"
               style={{ borderRadius: "9999px", WebkitBorderRadius: "9999px" }}
             >
               <Facebook className="h-6 w-6" aria-hidden="true" />
@@ -383,7 +383,7 @@ export default function Header() {
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-full bg-white/10 p-3 text-white transition-all hover:bg-[#A59765]"
-              aria-label="Instagram Entreprise D'Yen"
+              aria-label="Instagram Cimes & Bois"
               style={{ borderRadius: "9999px", WebkitBorderRadius: "9999px" }}
             >
               <Instagram className="h-6 w-6" aria-hidden="true" />

@@ -5,9 +5,9 @@ import Script from "next/script"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Chalets en Bois & Extensions | Construction dans le Haut-Verdon",
+  title: "Chalets en Bois & Extensions | Construction dans le Val des Cimes",
   description:
-    "Construction de chalets en bois et extensions sur mesure à Colmars et dans les Alpes de Haute-Provence. Solutions écologiques et personnalisées par Entreprise D'Yen.",
+    "Construction de chalets en bois et extensions sur mesure à Val-des-Cimes et en montagne. Solutions écologiques et personnalisées par Cimes & Bois.",
   alternates: {
     canonical: "/chalets",
   },
@@ -26,19 +26,19 @@ export default function Chalets() {
             name: "Construction de chalets en bois et extensions",
             provider: {
               "@type": "LocalBusiness",
-              name: "Entreprise D'Yen Construction Bois",
+              name: "Cimes & Bois Construction Bois",
               address: {
                 "@type": "PostalAddress",
-                streetAddress: "Chemin de la Cascade",
-                addressLocality: "Colmars",
-                postalCode: "04370",
-                addressRegion: "Alpes de Haute-Provence",
+                streetAddress: "12 chemin des Exemples",
+                addressLocality: "Val-des-Cimes",
+                postalCode: "00000",
+                addressRegion: "montagne",
                 addressCountry: "FR",
               },
             },
             description:
-              "Construction de chalets en bois et extensions sur mesure à Colmars et dans les Alpes de Haute-Provence. Solutions écologiques et personnalisées.",
-            areaServed: ["Colmars", "Haut-Verdon", "Val d'Allos", "Alpes de Haute-Provence"],
+              "Construction de chalets en bois et extensions sur mesure à Val-des-Cimes et en montagne. Solutions écologiques et personnalisées.",
+            areaServed: ["Val-des-Cimes", "Val des Cimes", "Val des Cimes", "montagne"],
             serviceType: ["Construction de chalets", "Extensions en bois", "Charpente"],
             offers: {
               "@type": "Offer",
@@ -56,8 +56,8 @@ export default function Chalets() {
         {/* Hero Section */}
         <section className="relative h-[60vh] w-full">
           <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/chalet_sunset-ovvnHa8eLXaMgLOCbroOsO3G1E2vY0.jpeg"
-            alt="Chalets en bois et extensions dans les Alpes de Haute-Provence"
+            src="/images/fpe8g2eqcn.jpg"
+            alt="Chalets en bois et extensions en montagne"
             fill
             priority
             className="object-cover brightness-[0.7]"
@@ -67,7 +67,7 @@ export default function Chalets() {
               Chalets en Bois & <span className="text-[#A59765]">Extensions</span>
             </h1>
             <p className="animate-fade-in-up animation-delay-300 mb-8 max-w-2xl text-lg md:text-xl">
-              Des solutions sur mesure pour créer ou agrandir votre espace de vie à Colmars et dans le Haut-Verdon
+              Des solutions sur mesure pour créer ou agrandir votre espace de vie à Val-des-Cimes et dans le Val des Cimes
             </p>
           </div>
         </section>
@@ -82,7 +82,7 @@ export default function Chalets() {
                 </h2>
                 <p className="mb-6 text-lg text-gray-700">
                   Notre entreprise vous propose ses services dans la conception et la réalisation de chalets en bois
-                  dans les Alpes de Haute-Provence. La construction en bois compte de nombreux avantages que nous
+                  en montagne. La construction en bois compte de nombreux avantages que nous
                   mettons à votre service pour des réalisations durables et personnalisées.
                 </p>
 
@@ -93,7 +93,7 @@ export default function Chalets() {
                       <h3 className="text-lg font-semibold text-[#4F5960]">Matériau pur et écologique</h3>
                       <p className="text-gray-600">
                         Le bois, un choix naturel et respectueux de l'environnement pour vos constructions dans le
-                        Haut-Verdon
+                        Val des Cimes
                       </p>
                     </div>
                   </div>
@@ -113,7 +113,7 @@ export default function Chalets() {
                     <div>
                       <h3 className="text-lg font-semibold text-[#4F5960]">Performances énergétiques optimales</h3>
                       <p className="text-gray-600">
-                        Excellente isolation thermique pour un confort optimal dans le climat montagnard du Val d'Allos
+                        Excellente isolation thermique pour un confort optimal dans le climat montagnard du Val des Cimes
                       </p>
                     </div>
                   </div>
@@ -124,7 +124,7 @@ export default function Chalets() {
                       <h3 className="text-lg font-semibold text-[#4F5960]">Rapidité d'exécution</h3>
                       <p className="text-gray-600">
                         Délais de construction réduits par rapport aux méthodes traditionnelles, idéal pour les projets
-                        à Colmars
+                        à Val-des-Cimes
                       </p>
                     </div>
                   </div>
@@ -135,7 +135,7 @@ export default function Chalets() {
                       <h3 className="text-lg font-semibold text-[#4F5960]">Accompagnement administratif</h3>
                       <p className="text-gray-600">
                         Assistance dans les démarches administratives et coordination des différents corps de métiers
-                        pour un « esprit libre » dans les Alpes de Haute-Provence
+                        pour un « esprit libre » en montagne
                       </p>
                     </div>
                   </div>
@@ -144,7 +144,7 @@ export default function Chalets() {
                 <Link
                   href="/contact"
                   className="group inline-flex items-center gap-2 rounded-full bg-[#A59765] px-6 py-3 text-lg font-medium text-white transition-all duration-300 hover:bg-[#8a7d53] hover:shadow-lg"
-                  aria-label="Demander un devis pour votre chalet en bois dans le Haut-Verdon"
+                  aria-label="Demander un devis pour votre chalet en bois dans le Val des Cimes"
                 >
                   Demander un devis
                   <ArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
@@ -154,8 +154,8 @@ export default function Chalets() {
               <div className="lg:w-1/2">
                 <div className="overflow-hidden rounded-xl shadow-xl">
                   <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/chaletOssatureBois3.jpg-SF794eXmmplGl3TzX9Qg7gB6jEUoku.jpeg"
-                    alt="Chalet en bois à Colmars dans les Alpes de Haute-Provence"
+                    src="/images/ttskfgc6g1.jpg"
+                    alt="Chalet en bois à Val-des-Cimes en montagne"
                     width={600}
                     height={400}
                     className="h-auto w-full object-cover"
@@ -175,9 +175,9 @@ export default function Chalets() {
                   <span className="text-[#A59765]">Extensions</span> de Maison
                 </h2>
                 <p className="mb-6 text-lg text-gray-700">
-                  Envie d'agrandir votre maison dans le Haut-Verdon ? L'extension bois est la solution idéale pour
+                  Envie d'agrandir votre maison dans le Val des Cimes ? L'extension bois est la solution idéale pour
                   diverses raisons. Nous intervenons également pour la rénovation ou l'amélioration de votre Charpente /
-                  Couverture dans les Alpes de Haute-Provence.
+                  Couverture en montagne.
                 </p>
 
                 <div className="mb-8 space-y-4">
@@ -186,7 +186,7 @@ export default function Chalets() {
                     <div>
                       <h3 className="text-lg font-semibold text-[#4F5960]">Légèreté de la construction bois</h3>
                       <p className="text-gray-600">
-                        Fondations simplifiées et impact minimal sur votre terrain à Colmars et dans le Val d'Allos
+                        Fondations simplifiées et impact minimal sur votre terrain à Val-des-Cimes et dans le Val des Cimes
                       </p>
                     </div>
                   </div>
@@ -198,8 +198,7 @@ export default function Chalets() {
                         Grande capacité d'intégration à l'existant
                       </h3>
                       <p className="text-gray-600">
-                        Design adapté pour une continuité parfaite avec votre habitation dans les Alpes de
-                        Haute-Provence
+                        Design adapté pour une continuité parfaite avec votre habitation en montagne
                       </p>
                     </div>
                   </div>
@@ -219,7 +218,7 @@ export default function Chalets() {
                     <div>
                       <h3 className="text-lg font-semibold text-[#4F5960]">Contraintes techniques simplifiées</h3>
                       <p className="text-gray-600">
-                        Solutions adaptées aux configurations complexes des terrains du Haut-Verdon
+                        Solutions adaptées aux configurations complexes des terrains du Val des Cimes
                       </p>
                     </div>
                   </div>
@@ -228,7 +227,7 @@ export default function Chalets() {
                 <Link
                   href="/contact"
                   className="group inline-flex items-center gap-2 rounded-full bg-[#A59765] px-6 py-3 text-lg font-medium text-white transition-all duration-300 hover:bg-[#8a7d53] hover:shadow-lg"
-                  aria-label="Demander un devis pour votre extension en bois dans les Alpes de Haute-Provence"
+                  aria-label="Demander un devis pour votre extension en bois en montagne"
                 >
                   Demander un devis
                   <ArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
@@ -238,8 +237,8 @@ export default function Chalets() {
               <div className="lg:w-1/2">
                 <div className="overflow-hidden rounded-xl shadow-xl">
                   <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/extension.jpg-09V1nNbpPWFHi5lMn84odLq4QaPydx.jpeg"
-                    alt="Extension de maison en bois dans le Haut-Verdon Val d'Allos"
+                    src="/images/ttskfgc6g1.jpg"
+                    alt="Extension de maison en bois dans le Val des Cimes"
                     width={600}
                     height={400}
                     className="h-auto w-full object-cover"
@@ -261,8 +260,8 @@ export default function Chalets() {
               <div className="group overflow-hidden rounded-lg shadow-md">
                 <div className="relative h-64 w-full overflow-hidden">
                   <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/chaletBoisMassif.jpg-Gn4DUb8OsIAKRMsJiFBA9wXGRugFAD.jpeg"
-                    alt="Chalet contemporain en bois à Colmars"
+                    src="/images/t0bhafeffr.jpg"
+                    alt="Chalet contemporain en bois à Val-des-Cimes"
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
@@ -270,12 +269,12 @@ export default function Chalets() {
                 <div className="p-6">
                   <h3 className="mb-2 text-xl font-semibold text-[#4F5960]">Chalet contemporain</h3>
                   <p className="mb-4 text-gray-600">
-                    Construction d'un chalet moderne de 80m² dans les Alpes de Haute-Provence
+                    Construction d'un chalet moderne de 80m² en montagne
                   </p>
                   <Link
                     href="/gallery"
                     className="flex items-center gap-2 text-[#A59765] transition-all duration-300 hover:text-[#8a7d53]"
-                    aria-label="Voir notre projet de chalet contemporain dans le Haut-Verdon"
+                    aria-label="Voir notre projet de chalet contemporain dans le Val des Cimes"
                   >
                     Voir le projet
                     <ArrowRight className="h-4 w-4" />
@@ -286,8 +285,8 @@ export default function Chalets() {
               <div className="group overflow-hidden rounded-lg shadow-md">
                 <div className="relative h-64 w-full overflow-hidden">
                   <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/extension2.jpg-GWDJKeJCEc4JjXAaw1mION65hyu1o2.jpeg"
-                    alt="Extension véranda en bois dans le Val d'Allos"
+                    src="/images/ej9ay5jee6.jpg"
+                    alt="Extension véranda en bois dans le Val des Cimes"
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
@@ -295,12 +294,12 @@ export default function Chalets() {
                 <div className="p-6">
                   <h3 className="mb-2 text-xl font-semibold text-[#4F5960]">Extension véranda</h3>
                   <p className="mb-4 text-gray-600">
-                    Extension lumineuse pour une maison familiale dans le Haut-Verdon
+                    Extension lumineuse pour une maison familiale dans le Val des Cimes
                   </p>
                   <Link
                     href="/gallery"
                     className="flex items-center gap-2 text-[#A59765] transition-all duration-300 hover:text-[#8a7d53]"
-                    aria-label="Voir notre projet d'extension véranda dans les Alpes de Haute-Provence"
+                    aria-label="Voir notre projet d'extension véranda en montagne"
                   >
                     Voir le projet
                     <ArrowRight className="h-4 w-4" />
@@ -311,8 +310,8 @@ export default function Chalets() {
               <div className="group overflow-hidden rounded-lg shadow-md">
                 <div className="relative h-64 w-full overflow-hidden">
                   <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/chaletOssatureBois5.jpg-ob9zlS9lyRoGHeQOBwnr8Ths0aAOtD.jpeg"
-                    alt="Rénovation complète de chalet à Colmars"
+                    src="/images/t7avuvcyr0.jpg"
+                    alt="Rénovation complète de chalet à Val-des-Cimes"
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
@@ -320,12 +319,12 @@ export default function Chalets() {
                 <div className="p-6">
                   <h3 className="mb-2 text-xl font-semibold text-[#4F5960]">Rénovation complète</h3>
                   <p className="mb-4 text-gray-600">
-                    Rénovation et extension d'un chalet traditionnel dans les Alpes de Haute-Provence
+                    Rénovation et extension d'un chalet traditionnel en montagne
                   </p>
                   <Link
                     href="/gallery"
                     className="flex items-center gap-2 text-[#A59765] transition-all duration-300 hover:text-[#8a7d53]"
-                    aria-label="Voir notre projet de rénovation complète dans le Haut-Verdon"
+                    aria-label="Voir notre projet de rénovation complète dans le Val des Cimes"
                   >
                     Voir le projet
                     <ArrowRight className="h-4 w-4" />
@@ -340,16 +339,16 @@ export default function Chalets() {
         <section className="bg-[#4F5960] py-16">
           <div className="container mx-auto px-4 text-center">
             <h2 className="mb-6 text-3xl font-bold text-white md:text-4xl">
-              Envie de concrétiser votre projet dans le Haut-Verdon ?
+              Envie de concrétiser votre projet dans le Val des Cimes ?
             </h2>
             <p className="mx-auto mb-8 max-w-2xl text-lg text-white/80">
               Contactez-nous pour discuter de vos besoins et obtenir un devis personnalisé pour votre construction en
-              bois à Colmars.
+              bois à Val-des-Cimes.
             </p>
             <Link
               href="/contact"
               className="group inline-flex items-center gap-2 rounded-full bg-[#A59765] px-8 py-4 text-lg font-medium text-white transition-all duration-300 hover:bg-[#8a7d53] hover:shadow-lg"
-              aria-label="Nous contacter pour votre projet de chalet ou extension en bois dans les Alpes de Haute-Provence"
+              aria-label="Nous contacter pour votre projet de chalet ou extension en bois en montagne"
             >
               Nous contacter
               <ArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />

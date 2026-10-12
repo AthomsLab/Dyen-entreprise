@@ -56,22 +56,22 @@ export default function Contact() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "ContactPage",
-            name: "Contact Entreprise D'Yen",
+            name: "Contact Cimes & Bois",
             description:
-              "Contactez Entreprise D'Yen pour vos projets de construction en bois, extensions et menuiserie à Colmars dans le Haut-Verdon Val d'Allos (04).",
+              "Contactez Cimes & Bois pour vos projets de construction en bois, extensions et menuiserie à Val-des-Cimes dans le Val des Cimes.",
             mainEntity: {
               "@type": "LocalBusiness",
-              name: "Entreprise D'Yen Construction Bois",
+              name: "Cimes & Bois Construction Bois",
               image:
-                "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo_transparent-XZVD5xQHj0QoSSd78TxlAKdquTq7hU.png",
-              telephone: "04 92 83 44 25",
-              email: "entreprisedyen@hotmail.fr",
+                "/images/logo.svg",
+              telephone: "01 23 45 67 89",
+              email: "contact@cimes-et-bois.example",
               address: {
                 "@type": "PostalAddress",
-                streetAddress: "Chemin de la Cascade",
-                addressLocality: "Colmars",
-                postalCode: "04370",
-                addressRegion: "Alpes de Haute-Provence",
+                streetAddress: "12 chemin des Exemples",
+                addressLocality: "Val-des-Cimes",
+                postalCode: "00000",
+                addressRegion: "montagne",
                 addressCountry: "FR",
               },
               geo: {
@@ -93,7 +93,7 @@ export default function Contact() {
                   closes: "12:00",
                 },
               ],
-              areaServed: ["Colmars", "Haut-Verdon", "Val d'Allos", "Alpes de Haute-Provence"],
+              areaServed: ["Val-des-Cimes", "Val des Cimes", "Val des Cimes", "montagne"],
             },
           }),
         }}
@@ -103,8 +103,8 @@ export default function Contact() {
         {/* Hero Section */}
         <section className="relative h-[40vh] w-full">
           <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/boat_lake-lo1kFoNswsEiQ7q7Yd6k3dftuA4ghU.webp"
-            alt="Contactez Entreprise D'Yen pour vos projets dans les Alpes de Haute-Provence"
+            src="/images/vfd9mdkcm6.jpg"
+            alt="Contactez Cimes & Bois pour vos projets en montagne"
             fill
             priority
             className="object-cover brightness-[0.7]"
@@ -114,8 +114,8 @@ export default function Contact() {
               <span className="text-[#A59765]">Contactez</span>-Nous
             </h1>
             <p className="animate-fade-in-up animation-delay-300 mb-8 max-w-2xl text-lg md:text-xl">
-              Nous sommes à votre écoute pour répondre à toutes vos questions sur vos projets à Colmars et dans le
-              Haut-Verdon
+              Nous sommes à votre écoute pour répondre à toutes vos questions sur vos projets à Val-des-Cimes et dans le
+              Val des Cimes
             </p>
           </div>
         </section>
@@ -138,11 +138,11 @@ export default function Contact() {
                     <div>
                       <h3 className="text-lg font-semibold text-[#4F5960]">Adresse</h3>
                       <p className="text-gray-600">
-                        Chemin de la Cascade
+                        12 chemin des Exemples
                         <br />
-                        04370 COLMARS
+                        00000 VAL-DES-CIMES
                         <br />
-                        Alpes de Haute-Provence, France
+                        montagne, France
                       </p>
                     </div>
                   </div>
@@ -153,7 +153,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <h3 className="text-lg font-semibold text-[#4F5960]">Téléphone</h3>
-                      <p className="text-gray-600">04 92 83 44 25</p>
+                      <p className="text-gray-600">01 23 45 67 89</p>
                     </div>
                   </div>
 
@@ -163,7 +163,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <h3 className="text-lg font-semibold text-[#4F5960]">Email</h3>
-                      <p className="text-gray-600">entreprisedyen@hotmail.fr</p>
+                      <p className="text-gray-600">contact@cimes-et-bois.example</p>
                     </div>
                   </div>
                 </div>
@@ -171,8 +171,7 @@ export default function Contact() {
                 <div className="mb-8">
                   <h3 className="mb-4 text-lg font-semibold text-[#4F5960]">Zone d'intervention</h3>
                   <p className="text-gray-600">
-                    Nous intervenons généralement sur les communes du Haut Verdon Val d'Allos et dans les Alpes de
-                    Haute-Provence. Si vous avez un projet au-delà de ce secteur, n'hésitez pas à nous contacter, nous
+                    Nous intervenons généralement sur les communes du Val des Cimes et en montagne. Si vous avez un projet au-delà de ce secteur, n'hésitez pas à nous contacter, nous
                     étudierons votre demande.
                   </p>
                 </div>
@@ -197,8 +196,8 @@ export default function Contact() {
 
                 <div>
                   <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/chaletOssatureBois4.jpg-YYIiZudRBnNfzNQBVg5R2zGUhT4GKP.jpeg"
-                    alt="Bureaux d'Entreprise D'Yen à Colmars dans le Haut-Verdon"
+                    src="/images/fpe8g2eqcn.jpg"
+                    alt="Bureaux de Cimes & Bois à Val-des-Cimes dans le Val des Cimes"
                     width={400}
                     height={300}
                     className="rounded-lg object-cover"
@@ -323,7 +322,7 @@ export default function Contact() {
                           type="submit"
                           disabled={isSubmitting}
                           className="group inline-flex items-center gap-2 rounded-full bg-[#A59765] px-6 py-3 text-lg font-medium text-white transition-all duration-300 hover:bg-[#8a7d53] hover:shadow-lg disabled:opacity-70"
-                          aria-label="Envoyer votre message à Entreprise D'Yen"
+                          aria-label="Envoyer votre message à Cimes & Bois"
                           aria-busy={isSubmitting}
                         >
                           {isSubmitting ? "Envoi en cours..." : "Envoyer le message"}
@@ -350,15 +349,15 @@ export default function Contact() {
 
             <div className="h-[400px] w-full overflow-hidden rounded-lg shadow-lg">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2883.1478811809245!2d6.626332476758737!3d44.18007611456996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cc625a6a864443%3A0xcc53a8ab32b94888!2sDyen%20Construction%20Bois-%20Entreprise%20de%20menuiserie%20construction%20bois%20-chalet%20bois%20-maison%20ossature%20bois!5e0!3m2!1sfr!2sfr!4v1711027175599!5m2!1sfr!2sfr"
+                src="https://www.google.com/maps?q=Alpes%20fran%C3%A7aises&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Localisation d'Entreprise D'Yen à Colmars dans le Haut-Verdon"
-                aria-label="Carte Google Maps montrant l'emplacement d'Entreprise D'Yen à Colmars"
+                title="Localisation de Cimes & Bois à Val-des-Cimes dans le Val des Cimes"
+                aria-label="Carte Google Maps montrant l'emplacement de Cimes & Bois à Val-des-Cimes"
               ></iframe>
             </div>
           </div>

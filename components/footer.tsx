@@ -26,8 +26,8 @@ export default function Footer() {
               <div className="relative inline-block rounded-lg overflow-hidden">
                 <div className={`absolute inset-0 bg-white/70 z-0`}></div>
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo_transparent-XZVD5xQHj0QoSSd78TxlAKdquTq7hU.png"
-                  alt="DYEN Construction Bois - Logo"
+                  src="/images/logo.svg"
+                  alt="Cimes & Bois - Logo"
                   width={220}
                   height={75}
                   className="relative z-10 p-1"
@@ -43,7 +43,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-full bg-white/10 p-2 transition-colors hover:bg-[#A59765]"
-                aria-label="Facebook Entreprise D'Yen"
+                aria-label="Facebook Cimes & Bois"
               >
                 <Facebook className="h-5 w-5" aria-hidden="true" />
               </a>
@@ -52,7 +52,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-full bg-white/10 p-2 transition-colors hover:bg-[#A59765]"
-                aria-label="Instagram Entreprise D'Yen"
+                aria-label="Instagram Cimes & Bois"
               >
                 <Instagram className="h-5 w-5" aria-hidden="true" />
               </a>
@@ -107,23 +107,23 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="mt-1 h-5 w-5 flex-shrink-0 text-[#A59765]" aria-hidden="true" />
                 <span className="text-white/80">
-                  Chemin de la Cascade
+                  12 chemin des Exemples
                   <br />
-                  04370 COLMARS
+                  00000 VAL-DES-CIMES
                   <br />
                   France
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 flex-shrink-0 text-[#A59765]" aria-hidden="true" />
-                <a href="tel:0492834425" className="text-white/80 hover:text-white">
-                  04 92 83 44 25
+                <a href="tel:0123456789" className="text-white/80 hover:text-white">
+                  01 23 45 67 89
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 flex-shrink-0 text-[#A59765]" aria-hidden="true" />
-                <a href="mailto:entreprisedyen@hotmail.fr" className="text-white/80 hover:text-white">
-                  entreprisedyen@hotmail.fr
+                <a href="mailto:contact@cimes-et-bois.example" className="text-white/80 hover:text-white">
+                  contact@cimes-et-bois.example
                 </a>
               </li>
             </ul>
@@ -154,9 +154,9 @@ export default function Footer() {
         {/* Partie basse du footer */}
         <div className="relative mt-12 border-t border-white/10 pt-8 text-center text-sm text-white/80">
           <p className="mb-2">
-            ENTREPRISE DYEN SARL - SIRET 40473968200015 - TVA Intra. FR24404739682 - RCS Manosque B 404 739 682
+            CIMES & BOIS (entreprise fictive) - Site de démonstration réalisé par Athoms Lab - SIRET 000 000 000 00000 (exemple)
           </p>
-          <p>DYEN CONSTRUCTION BOIS © {new Date().getFullYear()} | Tous droits réservés.</p>
+          <p>CIMES & BOIS © {new Date().getFullYear()} | Tous droits réservés.</p>
         </div>
       </div>
     </footer>

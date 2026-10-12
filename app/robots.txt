@@ -3,8 +3,8 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://entreprise-dyen.vercel.app
+Host: https://entreprisedyen.vercel.app
 
 # Sitemaps
-Sitemap: https://entreprise-dyen.vercel.app/sitemap.xml
+Sitemap: https://entreprisedyen.vercel.app/sitemap.xml
 
