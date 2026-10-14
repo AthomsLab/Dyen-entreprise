@@ -460,7 +460,7 @@ export default function Gallery() {
                   onClick={() => setSelectedCategory(category.id)}
                   className={`rounded-full px-6 py-2 text-sm font-medium transition-all duration-300 ${
                     selectedCategory === category.id
-                      ? "bg-[#7a6e43] text-white"
+                      ? "bg-accent-button text-white"
                       : "bg-gray-100 text-gray-700 hover:bg-gray-200"
                   }`}
                   style={{ borderRadius: "9999px", WebkitBorderRadius: "9999px" }}

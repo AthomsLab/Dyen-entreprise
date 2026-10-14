@@ -29,7 +29,7 @@ export default function SkipToContent() {
   return (
     <a
       href="#main-content"
-      className={`fixed left-4 top-4 z-[100] transform bg-[#7a6e43] px-4 py-2 text-white transition-transform duration-200 focus:outline-none ${
+      className={`fixed left-4 top-4 z-[100] transform bg-accent-button px-4 py-2 text-white transition-transform duration-200 focus:outline-none ${
         isVisible ? "translate-y-0" : "-translate-y-16"
       }`}
       style={{ borderRadius: "0.25rem", WebkitBorderRadius: "0.25rem" }}

@@ -93,7 +93,7 @@ export default function Header() {
     >
       <div className="w-full px-4 lg:px-4 md:px-3 sm:px-3 flex items-center justify-between">
         {/* Logo - positionné à gauche avec un padding fixe sur mobile */}
-        <div className="w-[220px] lg:pl-5 md:pl-3 sm:pl-3">
+        <div className="w-[240px] lg:pl-5 md:pl-3 sm:pl-3">
           <Link href="/" className="flex items-center gap-2" aria-label="Accueil Cimes & Bois">
             <div
               className="relative rounded-lg overflow-hidden"
@@ -103,7 +103,7 @@ export default function Header() {
               <Image
                 src="/images/logo.svg"
                 alt="Cimes & Bois - Logo"
-                width={220}
+                width={240}
                 height={60}
                 className="relative z-10 p-1"
               />
@@ -118,7 +118,7 @@ export default function Header() {
               <li>
                 <Link
                   href="/"
-                  className={`text-sm font-medium transition-colors hover:text-[#A59765] ${
+                  className={`text-sm font-medium transition-colors hover:text-accent-primary ${
                     isScrolled ? "text-[#4F5960]" : "text-white"
                   }`}
                 >
@@ -128,7 +128,7 @@ export default function Header() {
               <li>
                 <Link
                   href="/chalets"
-                  className={`text-sm font-medium transition-colors hover:text-[#A59765] ${
+                  className={`text-sm font-medium transition-colors hover:text-accent-primary ${
                     isScrolled ? "text-[#4F5960]" : "text-white"
                   }`}
                 >
@@ -138,7 +138,7 @@ export default function Header() {
               <li>
                 <Link
                   href="/carpentry"
-                  className={`text-sm font-medium transition-colors hover:text-[#A59765] ${
+                  className={`text-sm font-medium transition-colors hover:text-accent-primary ${
                     isScrolled ? "text-[#4F5960]" : "text-white"
                   }`}
                 >
@@ -148,7 +148,7 @@ export default function Header() {
               <li>
                 <Link
                   href="/gallery"
-                  className={`text-sm font-medium transition-colors hover:text-[#A59765] ${
+                  className={`text-sm font-medium transition-colors hover:text-accent-primary ${
                     isScrolled ? "text-[#4F5960]" : "text-white"
                   }`}
                 >
@@ -158,7 +158,7 @@ export default function Header() {
               <li>
                 <Link
                   href="/contact"
-                  className={`text-sm font-medium transition-colors hover:text-[#A59765] ${
+                  className={`text-sm font-medium transition-colors hover:text-accent-primary ${
                     isScrolled ? "text-[#4F5960]" : "text-white"
                   }`}
                 >
@@ -170,7 +170,7 @@ export default function Header() {
         </div>
 
         {/* Social Media Icons - positionnés à droite avec un padding fixe sur mobile */}
-        <div className="w-[220px] flex justify-end lg:pr-5 md:pr-3 sm:pr-3">
+        <div className="w-[240px] flex justify-end lg:pr-5 md:pr-3 sm:pr-3">
           <div className="hidden items-center space-x-3 lg:flex">
             <a
               href="https://facebook.com"
@@ -178,8 +178,8 @@ export default function Header() {
               rel="noopener noreferrer"
               className={`rounded-full p-2 transition-colors ${
                 isScrolled
-                  ? "bg-[#A59765]/10 text-[#A59765] hover:bg-[#7a6e43] hover:text-white"
-                  : "bg-white/10 text-white hover:bg-[#7a6e43]"
+                  ? "bg-accent-light text-accent-primary hover:bg-accent-button hover:text-white"
+                  : "bg-white/10 text-white hover:bg-accent-button"
               }`}
               aria-label="Facebook Cimes & Bois"
               style={{ borderRadius: "9999px", WebkitBorderRadius: "9999px" }}
@@ -192,8 +192,8 @@ export default function Header() {
               rel="noopener noreferrer"
               className={`rounded-full p-2 transition-colors ${
                 isScrolled
-                  ? "bg-[#A59765]/10 text-[#A59765] hover:bg-[#7a6e43] hover:text-white"
-                  : "bg-white/10 text-white hover:bg-[#7a6e43]"
+                  ? "bg-accent-light text-accent-primary hover:bg-accent-button hover:text-white"
+                  : "bg-white/10 text-white hover:bg-accent-button"
               }`}
               aria-label="Instagram Cimes & Bois"
               style={{ borderRadius: "9999px", WebkitBorderRadius: "9999px" }}
@@ -254,10 +254,10 @@ export default function Header() {
             xmlns="http://www.w3.org/2000/svg"
             aria-hidden="true"
           >
-            <path d="M400 50L100 300H200V550H600V300H700L400 50Z" stroke="#A59765" strokeWidth="8" fill="none" />
-            <path d="M350 550V400H450V550H350Z" stroke="#A59765" strokeWidth="8" fill="none" />
-            <path d="M250 350H350V250H250V350Z" stroke="#A59765" strokeWidth="8" fill="none" />
-            <path d="M450 350H550V250H450V350Z" stroke="#A59765" strokeWidth="8" fill="none" />
+            <path d="M400 50L100 300H200V550H600V300H700L400 50Z" style={{ stroke: "var(--accent-primary)" }} strokeWidth="8" fill="none" />
+            <path d="M350 550V400H450V550H350Z" style={{ stroke: "var(--accent-primary)" }} strokeWidth="8" fill="none" />
+            <path d="M250 350H350V250H250V350Z" style={{ stroke: "var(--accent-primary)" }} strokeWidth="8" fill="none" />
+            <path d="M450 350H550V250H450V350Z" style={{ stroke: "var(--accent-primary)" }} strokeWidth="8" fill="none" />
           </svg>
 
           {/* Texture subtile */}
@@ -302,7 +302,7 @@ export default function Header() {
                   onClick={() => setIsMenuOpen(false)}
                   style={{ borderRadius: "0.5rem", WebkitBorderRadius: "0.5rem" }}
                 >
-                  <Home className="h-5 w-5 text-[#A59765]" aria-hidden="true" />
+                  <Home className="h-5 w-5 text-accent-primary" aria-hidden="true" />
                   <span className="text-lg font-medium">Accueil</span>
                   <ChevronRight className="h-5 w-5 ml-auto" aria-hidden="true" />
                 </Link>
@@ -320,7 +320,7 @@ export default function Header() {
                   onClick={() => setIsMenuOpen(false)}
                   style={{ borderRadius: "0.5rem", WebkitBorderRadius: "0.5rem" }}
                 >
-                  <Mountain className="h-5 w-5 text-[#A59765]" aria-hidden="true" />
+                  <Mountain className="h-5 w-5 text-accent-primary" aria-hidden="true" />
                   <span className="text-lg font-medium">Chalets & Extensions</span>
                   <ChevronRight className="h-5 w-5 ml-auto" aria-hidden="true" />
                 </Link>
@@ -338,7 +338,7 @@ export default function Header() {
                   onClick={() => setIsMenuOpen(false)}
                   style={{ borderRadius: "0.5rem", WebkitBorderRadius: "0.5rem" }}
                 >
-                  <Hammer className="h-5 w-5 text-[#A59765]" aria-hidden="true" />
+                  <Hammer className="h-5 w-5 text-accent-primary" aria-hidden="true" />
                   <span className="text-lg font-medium">Menuiserie</span>
                   <ChevronRight className="h-5 w-5 ml-auto" aria-hidden="true" />
                 </Link>
@@ -356,7 +356,7 @@ export default function Header() {
                   onClick={() => setIsMenuOpen(false)}
                   style={{ borderRadius: "0.5rem", WebkitBorderRadius: "0.5rem" }}
                 >
-                  <ImageIcon className="h-5 w-5 text-[#A59765]" aria-hidden="true" />
+                  <ImageIcon className="h-5 w-5 text-accent-primary" aria-hidden="true" />
                   <span className="text-lg font-medium">Galerie</span>
                   <ChevronRight className="h-5 w-5 ml-auto" aria-hidden="true" />
                 </Link>
@@ -374,7 +374,7 @@ export default function Header() {
                   onClick={() => setIsMenuOpen(false)}
                   style={{ borderRadius: "0.5rem", WebkitBorderRadius: "0.5rem" }}
                 >
-                  <Mail className="h-5 w-5 text-[#A59765]" aria-hidden="true" />
+                  <Mail className="h-5 w-5 text-accent-primary" aria-hidden="true" />
                   <span className="text-lg font-medium">Contact</span>
                   <ChevronRight className="h-5 w-5 ml-auto" aria-hidden="true" />
                 </Link>
@@ -391,7 +391,7 @@ export default function Header() {
           >
             <Link
               href="/contact"
-              className="flex items-center justify-center gap-2 w-full rounded-full bg-[#7a6e43] px-6 py-4 text-lg font-medium text-white transition-all duration-300 hover:bg-[#665c37] hover:shadow-lg"
+              className="flex items-center justify-center gap-2 w-full rounded-full bg-accent-button px-6 py-4 text-lg font-medium text-white transition-all duration-300 hover:bg-accent-button-hover hover:shadow-lg"
               onClick={() => setIsMenuOpen(false)}
               style={{ borderRadius: "9999px", WebkitBorderRadius: "9999px" }}
               
@@ -412,7 +412,7 @@ export default function Header() {
               href="https://facebook.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full bg-white/10 p-3 text-white transition-all hover:bg-[#7a6e43]"
+              className="rounded-full bg-white/10 p-3 text-white transition-all hover:bg-accent-button"
               aria-label="Facebook Cimes & Bois"
               style={{ borderRadius: "9999px", WebkitBorderRadius: "9999px" }}
             >
@@ -422,7 +422,7 @@ export default function Header() {
               href="https://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full bg-white/10 p-3 text-white transition-all hover:bg-[#7a6e43]"
+              className="rounded-full bg-white/10 p-3 text-white transition-all hover:bg-accent-button"
               aria-label="Instagram Cimes & Bois"
               style={{ borderRadius: "9999px", WebkitBorderRadius: "9999px" }}
             >
