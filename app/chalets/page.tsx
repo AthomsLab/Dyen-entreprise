@@ -64,7 +64,7 @@ export default function Chalets() {
           />
           <div className="absolute inset-0 flex flex-col items-center justify-center px-4 text-center text-white">
             <h1 className="animate-fade-in-up mb-6 text-4xl font-bold leading-tight md:text-5xl">
-              Chalets en Bois & <span className="text-[#7a6e43]">Extensions</span>
+              Chalets en Bois & <span className="text-accent-button">Extensions</span>
             </h1>
             <p className="animate-fade-in-up animation-delay-300 mb-8 max-w-2xl text-lg md:text-xl">
               Des solutions sur mesure pour créer ou agrandir votre espace de vie à Val-des-Cimes et dans le Val des Cimes
@@ -78,7 +78,7 @@ export default function Chalets() {
             <div className="flex flex-col gap-12 lg:flex-row lg:items-center">
               <div className="lg:w-1/2">
                 <h2 className="mb-6 text-3xl font-bold text-[#4F5960] md:text-4xl">
-                  Chalets en <span className="text-[#7a6e43]">Bois</span>
+                  Chalets en <span className="text-accent-button">Bois</span>
                 </h2>
                 <p className="mb-6 text-lg text-gray-700">
                   Notre entreprise vous propose ses services dans la conception et la réalisation de chalets en bois
@@ -88,7 +88,7 @@ export default function Chalets() {
 
                 <div className="mb-8 space-y-4">
                   <div className="flex items-start gap-3">
-                    <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-[#7a6e43]" />
+                    <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-accent-button" />
                     <div>
                       <h3 className="text-lg font-semibold text-[#4F5960]">Matériau pur et écologique</h3>
                       <p className="text-gray-600">
@@ -99,7 +99,7 @@ export default function Chalets() {
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-[#7a6e43]" />
+                    <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-accent-button" />
                     <div>
                       <h3 className="text-lg font-semibold text-[#4F5960]">Grandes possibilités architecturales</h3>
                       <p className="text-gray-600">
@@ -109,7 +109,7 @@ export default function Chalets() {
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-[#7a6e43]" />
+                    <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-accent-button" />
                     <div>
                       <h3 className="text-lg font-semibold text-[#4F5960]">Performances énergétiques optimales</h3>
                       <p className="text-gray-600">
@@ -119,7 +119,7 @@ export default function Chalets() {
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-[#7a6e43]" />
+                    <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-accent-button" />
                     <div>
                       <h3 className="text-lg font-semibold text-[#4F5960]">Rapidité d'exécution</h3>
                       <p className="text-gray-600">
@@ -130,7 +130,7 @@ export default function Chalets() {
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-[#7a6e43]" />
+                    <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-accent-button" />
                     <div>
                       <h3 className="text-lg font-semibold text-[#4F5960]">Accompagnement administratif</h3>
                       <p className="text-gray-600">
@@ -143,7 +143,7 @@ export default function Chalets() {
 
                 <Link
                   href="/contact"
-                  className="group inline-flex items-center gap-2 rounded-full bg-[#7a6e43] px-6 py-3 text-lg font-medium text-white transition-all duration-300 hover:bg-[#665c37] hover:shadow-lg"
+                  className="group inline-flex items-center gap-2 rounded-full bg-accent-button px-6 py-3 text-lg font-medium text-white transition-all duration-300 hover:bg-accent-button-hover hover:shadow-lg"
                   aria-label="Demander un devis pour votre chalet en bois dans le Val des Cimes"
                 >
                   Demander un devis
@@ -172,7 +172,7 @@ export default function Chalets() {
             <div className="flex flex-col gap-12 lg:flex-row-reverse lg:items-center">
               <div className="lg:w-1/2">
                 <h2 className="mb-6 text-3xl font-bold text-[#4F5960] md:text-4xl">
-                  <span className="text-[#7a6e43]">Extensions</span> de Maison
+                  <span className="text-accent-button">Extensions</span> de Maison
                 </h2>
                 <p className="mb-6 text-lg text-gray-700">
                   Envie d'agrandir votre maison dans le Val des Cimes ? L'extension bois est la solution idéale pour
@@ -182,7 +182,7 @@ export default function Chalets() {
 
                 <div className="mb-8 space-y-4">
                   <div className="flex items-start gap-3">
-                    <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-[#7a6e43]" />
+                    <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-accent-button" />
                     <div>
                       <h3 className="text-lg font-semibold text-[#4F5960]">Légèreté de la construction bois</h3>
                       <p className="text-gray-600">
@@ -192,7 +192,7 @@ export default function Chalets() {
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-[#7a6e43]" />
+                    <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-accent-button" />
                     <div>
                       <h3 className="text-lg font-semibold text-[#4F5960]">
                         Grande capacité d'intégration à l'existant
@@ -204,7 +204,7 @@ export default function Chalets() {
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-[#7a6e43]" />
+                    <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-accent-button" />
                     <div>
                       <h3 className="text-lg font-semibold text-[#4F5960]">Atout esthétique du bois</h3>
                       <p className="text-gray-600">
@@ -214,7 +214,7 @@ export default function Chalets() {
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-[#7a6e43]" />
+                    <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-accent-button" />
                     <div>
                       <h3 className="text-lg font-semibold text-[#4F5960]">Contraintes techniques simplifiées</h3>
                       <p className="text-gray-600">
@@ -226,7 +226,7 @@ export default function Chalets() {
 
                 <Link
                   href="/contact"
-                  className="group inline-flex items-center gap-2 rounded-full bg-[#7a6e43] px-6 py-3 text-lg font-medium text-white transition-all duration-300 hover:bg-[#665c37] hover:shadow-lg"
+                  className="group inline-flex items-center gap-2 rounded-full bg-accent-button px-6 py-3 text-lg font-medium text-white transition-all duration-300 hover:bg-accent-button-hover hover:shadow-lg"
                   aria-label="Demander un devis pour votre extension en bois en montagne"
                 >
                   Demander un devis
@@ -253,7 +253,7 @@ export default function Chalets() {
         <section className="py-20">
           <div className="container mx-auto px-4">
             <h2 className="mb-12 text-center text-3xl font-bold text-[#4F5960] md:text-4xl">
-              Nos <span className="text-[#7a6e43]">Projets Récents</span>
+              Nos <span className="text-accent-button">Projets Récents</span>
             </h2>
 
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -273,7 +273,7 @@ export default function Chalets() {
                   </p>
                   <Link
                     href="/gallery"
-                    className="flex items-center gap-2 text-[#7a6e43] transition-all duration-300 hover:text-[#8a7d53]"
+                    className="flex items-center gap-2 text-accent-button transition-all duration-300 hover:text-accent-text-hover"
                     aria-label="Voir notre projet de chalet contemporain dans le Val des Cimes"
                   >
                     Voir le projet
@@ -298,7 +298,7 @@ export default function Chalets() {
                   </p>
                   <Link
                     href="/gallery"
-                    className="flex items-center gap-2 text-[#7a6e43] transition-all duration-300 hover:text-[#8a7d53]"
+                    className="flex items-center gap-2 text-accent-button transition-all duration-300 hover:text-accent-text-hover"
                     aria-label="Voir notre projet d'extension véranda en montagne"
                   >
                     Voir le projet
@@ -323,7 +323,7 @@ export default function Chalets() {
                   </p>
                   <Link
                     href="/gallery"
-                    className="flex items-center gap-2 text-[#7a6e43] transition-all duration-300 hover:text-[#8a7d53]"
+                    className="flex items-center gap-2 text-accent-button transition-all duration-300 hover:text-accent-text-hover"
                     aria-label="Voir notre projet de rénovation complète dans le Val des Cimes"
                   >
                     Voir le projet
@@ -347,7 +347,7 @@ export default function Chalets() {
             </p>
             <Link
               href="/contact"
-              className="group inline-flex items-center gap-2 rounded-full bg-[#7a6e43] px-8 py-4 text-lg font-medium text-white transition-all duration-300 hover:bg-[#665c37] hover:shadow-lg"
+              className="group inline-flex items-center gap-2 rounded-full bg-accent-button px-8 py-4 text-lg font-medium text-white transition-all duration-300 hover:bg-accent-button-hover hover:shadow-lg"
               aria-label="Nous contacter pour votre projet de chalet ou extension en bois en montagne"
             >
               Nous contacter

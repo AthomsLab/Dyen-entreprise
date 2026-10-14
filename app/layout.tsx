@@ -5,6 +5,7 @@ import Header from "@/components/header"
 import ScrollReveal from "@/components/scroll-reveal"
 import Footer from "@/components/footer"
 import SkipToContent from "@/components/skip-to-content"
+import ThemeSwitcher from "@/components/theme-switcher"
 import type { Metadata } from "next"
 
 const inter = Inter({ subsets: ["latin"] })
@@ -106,6 +107,7 @@ export default function RootLayout({
         </main>
         <Footer />
         <ScrollReveal />
+        <ThemeSwitcher />
       </body>
     </html>
   )

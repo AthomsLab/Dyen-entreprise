@@ -78,7 +78,7 @@ export default function Carpentry() {
             <div className="flex flex-col gap-12 lg:flex-row lg:items-center">
               <div className="lg:w-1/2">
                 <h2 className="mb-6 text-3xl font-bold text-[#4F5960] md:text-4xl">
-                  Notre Expertise en <span className="text-[#7a6e43]">Menuiserie</span>
+                  Notre Expertise en <span className="text-accent-button">Menuiserie</span>
                 </h2>
                 <p className="mb-6 text-lg text-gray-700">
                   CIMES & BOIS intervient dans le domaine de la menuiserie extérieure (Bois, Alu, PVC) à
@@ -89,7 +89,7 @@ export default function Carpentry() {
 
                 <div className="mb-8 space-y-4">
                   <div className="flex items-start gap-3">
-                    <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-[#7a6e43]" />
+                    <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-accent-button" />
                     <div>
                       <h3 className="text-lg font-semibold text-[#4F5960]">Menuiserie extérieure</h3>
                       <p className="text-gray-600">
@@ -99,7 +99,7 @@ export default function Carpentry() {
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-[#7a6e43]" />
+                    <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-accent-button" />
                     <div>
                       <h3 className="text-lg font-semibold text-[#4F5960]">Menuiserie intérieure</h3>
                       <p className="text-gray-600">
@@ -109,7 +109,7 @@ export default function Carpentry() {
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-[#7a6e43]" />
+                    <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-accent-button" />
                     <div>
                       <h3 className="text-lg font-semibold text-[#4F5960]">Aménagements sur mesure</h3>
                       <p className="text-gray-600">
@@ -119,7 +119,7 @@ export default function Carpentry() {
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-[#7a6e43]" />
+                    <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-accent-button" />
                     <div>
                       <h3 className="text-lg font-semibold text-[#4F5960]">Rénovation</h3>
                       <p className="text-gray-600">
@@ -132,7 +132,7 @@ export default function Carpentry() {
 
                 <Link
                   href="/contact"
-                  className="group inline-flex items-center gap-2 rounded-full bg-[#7a6e43] px-6 py-3 text-lg font-medium text-white transition-all duration-300 hover:bg-[#665c37] hover:shadow-lg"
+                  className="group inline-flex items-center gap-2 rounded-full bg-accent-button px-6 py-3 text-lg font-medium text-white transition-all duration-300 hover:bg-accent-button-hover hover:shadow-lg"
                   aria-label="Demander un devis pour vos travaux de menuiserie à Val-des-Cimes"
                 >
                   Demander un devis
@@ -161,7 +161,7 @@ export default function Carpentry() {
             <div className="flex flex-col gap-12 lg:flex-row-reverse lg:items-center">
               <div className="lg:w-1/2">
                 <h2 className="mb-6 text-3xl font-bold text-[#4F5960] md:text-4xl">
-                  <span className="text-[#7a6e43]">Aménagements</span> Intérieurs
+                  <span className="text-accent-button">Aménagements</span> Intérieurs
                 </h2>
                 <p className="mb-6 text-lg text-gray-700">
                   Nous réalisons également des agencements en bois afin de parfaire vos intérieurs à Val-des-Cimes et dans le
@@ -172,7 +172,7 @@ export default function Carpentry() {
 
                 <div className="mb-8 space-y-4">
                   <div className="flex items-start gap-3">
-                    <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-[#7a6e43]" />
+                    <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-accent-button" />
                     <div>
                       <h3 className="text-lg font-semibold text-[#4F5960]">Matériaux nobles</h3>
                       <p className="text-gray-600">
@@ -182,7 +182,7 @@ export default function Carpentry() {
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-[#7a6e43]" />
+                    <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-accent-button" />
                     <div>
                       <h3 className="text-lg font-semibold text-[#4F5960]">Alliance tradition et modernité</h3>
                       <p className="text-gray-600">
@@ -193,7 +193,7 @@ export default function Carpentry() {
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-[#7a6e43]" />
+                    <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-accent-button" />
                     <div>
                       <h3 className="text-lg font-semibold text-[#4F5960]">Projets sur-mesure</h3>
                       <p className="text-gray-600">
@@ -203,7 +203,7 @@ export default function Carpentry() {
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-[#7a6e43]" />
+                    <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-accent-button" />
                     <div>
                       <h3 className="text-lg font-semibold text-[#4F5960]">Finitions soignées</h3>
                       <p className="text-gray-600">
@@ -216,7 +216,7 @@ export default function Carpentry() {
 
                 <Link
                   href="/contact"
-                  className="group inline-flex items-center gap-2 rounded-full bg-[#7a6e43] px-6 py-3 text-lg font-medium text-white transition-all duration-300 hover:bg-[#665c37] hover:shadow-lg"
+                  className="group inline-flex items-center gap-2 rounded-full bg-accent-button px-6 py-3 text-lg font-medium text-white transition-all duration-300 hover:bg-accent-button-hover hover:shadow-lg"
                   aria-label="Demander un devis pour vos aménagements intérieurs en montagne"
                 >
                   Demander un devis
@@ -243,7 +243,7 @@ export default function Carpentry() {
         <section className="py-20">
           <div className="container mx-auto px-4">
             <h2 className="mb-12 text-center text-3xl font-bold text-[#4F5960] md:text-4xl">
-              Nos <span className="text-[#7a6e43]">Réalisations</span>
+              Nos <span className="text-accent-button">Réalisations</span>
             </h2>
 
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -306,7 +306,7 @@ export default function Carpentry() {
             <div className="mt-12 flex justify-center">
               <Link
                 href="/gallery"
-                className="group flex items-center gap-2 rounded-full border-2 border-[#A59765] px-6 py-3 text-lg font-medium text-[#7a6e43] transition-all duration-300 hover:bg-[#7a6e43] hover:text-white"
+                className="group flex items-center gap-2 rounded-full border-2 border-accent-primary px-6 py-3 text-lg font-medium text-accent-button transition-all duration-300 hover:bg-accent-button hover:text-white"
                 aria-label="Voir toutes nos réalisations de menuiserie dans le Val des Cimes"
               >
                 Voir toutes nos réalisations
@@ -328,7 +328,7 @@ export default function Carpentry() {
             </p>
             <Link
               href="/contact"
-              className="group inline-flex items-center gap-2 rounded-full bg-[#7a6e43] px-8 py-4 text-lg font-medium text-white transition-all duration-300 hover:bg-[#665c37] hover:shadow-lg"
+              className="group inline-flex items-center gap-2 rounded-full bg-accent-button px-8 py-4 text-lg font-medium text-white transition-all duration-300 hover:bg-accent-button-hover hover:shadow-lg"
               aria-label="Nous contacter pour votre projet de menuiserie dans le Val des Cimes"
             >
               Nous contacter

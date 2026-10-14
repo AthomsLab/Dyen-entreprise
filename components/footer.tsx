@@ -28,8 +28,8 @@ export default function Footer() {
                 <Image
                   src="/images/logo.svg"
                   alt="Cimes & Bois - Logo"
-                  width={220}
-                  height={75}
+                  width={240}
+                  height={60}
                   className="relative z-10 p-1"
                 />
               </div>
@@ -42,7 +42,7 @@ export default function Footer() {
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-full bg-white/10 p-2 transition-colors hover:bg-[#7a6e43]"
+                className="rounded-full bg-white/10 p-2 transition-colors hover:bg-accent-button"
                 aria-label="Facebook Cimes & Bois"
               >
                 <Facebook className="h-5 w-5" aria-hidden="true" />
@@ -51,7 +51,7 @@ export default function Footer() {
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-full bg-white/10 p-2 transition-colors hover:bg-[#7a6e43]"
+                className="rounded-full bg-white/10 p-2 transition-colors hover:bg-accent-button"
                 aria-label="Instagram Cimes & Bois"
               >
                 <Instagram className="h-5 w-5" aria-hidden="true" />
@@ -66,32 +66,32 @@ export default function Footer() {
             </h2>
             <ul className="space-y-2" aria-labelledby="footer-links">
               <li>
-                <Link href="/" className="text-white/80 transition-colors hover:text-[#A59765]">
+                <Link href="/" className="text-white/80 transition-colors hover:text-accent-primary">
                   Accueil
                 </Link>
               </li>
               <li>
-                <Link href="/chalets" className="text-white/80 transition-colors hover:text-[#A59765]">
+                <Link href="/chalets" className="text-white/80 transition-colors hover:text-accent-primary">
                   Chalets en Bois
                 </Link>
               </li>
               <li>
-                <Link href="/chalets#extensions" className="text-white/80 transition-colors hover:text-[#A59765]">
+                <Link href="/chalets#extensions" className="text-white/80 transition-colors hover:text-accent-primary">
                   Extensions
                 </Link>
               </li>
               <li>
-                <Link href="/carpentry" className="text-white/80 transition-colors hover:text-[#A59765]">
+                <Link href="/carpentry" className="text-white/80 transition-colors hover:text-accent-primary">
                   Menuiserie
                 </Link>
               </li>
               <li>
-                <Link href="/gallery" className="text-white/80 transition-colors hover:text-[#A59765]">
+                <Link href="/gallery" className="text-white/80 transition-colors hover:text-accent-primary">
                   Galerie
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-white/80 transition-colors hover:text-[#A59765]">
+                <Link href="/contact" className="text-white/80 transition-colors hover:text-accent-primary">
                   Contact
                 </Link>
               </li>
@@ -105,7 +105,7 @@ export default function Footer() {
             </h2>
             <ul className="space-y-3" aria-labelledby="footer-contact">
               <li className="flex items-start gap-3">
-                <MapPin className="mt-1 h-5 w-5 flex-shrink-0 text-[#A59765]" aria-hidden="true" />
+                <MapPin className="mt-1 h-5 w-5 flex-shrink-0 text-accent-primary" aria-hidden="true" />
                 <span className="text-white/80">
                   12 chemin des Exemples
                   <br />
@@ -115,13 +115,13 @@ export default function Footer() {
                 </span>
               </li>
               <li className="flex items-center gap-3">
-                <Phone className="h-5 w-5 flex-shrink-0 text-[#A59765]" aria-hidden="true" />
+                <Phone className="h-5 w-5 flex-shrink-0 text-accent-primary" aria-hidden="true" />
                 <a href="tel:0123456789" className="text-white/80 hover:text-white">
                   01 23 45 67 89
                 </a>
               </li>
               <li className="flex items-center gap-3">
-                <Mail className="h-5 w-5 flex-shrink-0 text-[#A59765]" aria-hidden="true" />
+                <Mail className="h-5 w-5 flex-shrink-0 text-accent-primary" aria-hidden="true" />
                 <a href="mailto:contact@cimes-et-bois.example" className="text-white/80 hover:text-white">
                   contact@cimes-et-bois.example
                 </a>
