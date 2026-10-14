@@ -7,48 +7,12 @@
   --background-start-rgb: 255, 255, 255;
   --background-end-rgb: 255, 255, 255;
   
-  /* Brand accent colors - default theme (current gold) */
-  --accent-primary: #A59765;
-  --accent-button: #7a6e43;
-  --accent-button-hover: #665c37;
-  --accent-text-hover: #8a7d53;
-  --accent-bg-light: rgba(165, 151, 101, 0.1);
-}
-
-/* Theme A: Warm Wood Amber/Ochre - Alpine wood warmth */
-[data-theme="amber"] {
-  --accent-primary: #C07830;
-  --accent-button: #9E6225;
-  --accent-button-hover: #7F4F1E;
-  --accent-text-hover: #D08A42;
-  --accent-bg-light: rgba(192, 120, 48, 0.1);
-}
-
-/* Theme B: Deep Forest Green - Alpine forest */
-[data-theme="forest"] {
-  --accent-primary: #2D6A4F;
-  --accent-button: #1E4D3A;
-  --accent-button-hover: #163B2C;
-  --accent-text-hover: #3D7A5F;
-  --accent-bg-light: rgba(45, 106, 79, 0.1);
-}
-
-/* Theme C: Slate Blue-Grey - Mountain slate */
-[data-theme="slate"] {
-  --accent-primary: #4A6FA5;
-  --accent-button: #3A5880;
-  --accent-button-hover: #2D4563;
-  --accent-text-hover: #5A7FB5;
-  --accent-bg-light: rgba(74, 111, 165, 0.1);
-}
-
-/* Theme D: Soft Terracotta - Warm earth tones */
-[data-theme="terracotta"] {
-  --accent-primary: #B26A56;
+  /* Brand accent colors - Terracotta theme (WCAG AA compliant) */
+  --accent-primary: #A8624E;
   --accent-button: #8F5444;
   --accent-button-hover: #714336;
-  --accent-text-hover: #C27A66;
-  --accent-bg-light: rgba(178, 106, 86, 0.1);
+  --accent-text-hover: #B87868;
+  --accent-bg-light: rgba(168, 98, 78, 0.1);
 }
 
 /* Accent color utility classes */
